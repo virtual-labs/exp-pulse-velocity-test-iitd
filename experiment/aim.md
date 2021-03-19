@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To test the concrete specimens by the non-destructive test methods namely ultrasonic pulse velocity test.
