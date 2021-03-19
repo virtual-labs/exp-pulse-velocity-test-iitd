@@ -28,18 +28,12 @@ Pulse velocity reported to the nearest 0.01km/s<br>
 </table><br>
 
 Concrete quality grading = _____________
- 
-<br><br> 
-
-
+<br>
 <strong>Results:</strong><br><br>
-
 Location of test or identification of specimen:<br>
 Location of transducers:<br>
 Pulse velocity:<br>
 Concrete Quality Grading:<br><br>
-
-
-<br><br> 
+<br> 
 <strong>Precautions:</strong><br><br>
 The quality of the coupling is critically important to the accuracy and maximum range of the method. Inadequate coupling will result in unstable and inaccurate time measurements, and will significantly shorten the effective range of the instrument. Repeat measurements should be made at the same location to minimize erroneous readings due to poor coupling.<br><br>
