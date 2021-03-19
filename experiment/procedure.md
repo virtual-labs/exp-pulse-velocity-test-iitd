@@ -17,7 +17,7 @@
 
 Pulse velocity reported to the nearest 0.01km/s<br>
 
-<table border="1" style="width: 500px">
+<table style="width: 500px">
     <tr >
         <td width="100px">L = </td>
         <td width="100px"></td>
