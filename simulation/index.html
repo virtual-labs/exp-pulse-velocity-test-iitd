@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ultrasonic Pulse Testing of Concrete</title>
+    
+
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="iitstyle.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="jquerymin.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- <script src="https://kit.fontawesome.com/afa6483c49.js" crossorigin="anonymous"></script> -->
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script>
+
+        var simsubscreennum=0;
+
+        var temp=0;
+
+    </script>
+
+</head>
+
+<body style="margin:0; font-family: verdana;" >
+<table align="center">
+<tr><td>
+    <div id="simscreen" style="overflow: hidden;">
+
+        <div id="title"><h4>ULTRASONIC PULSE TESTING OF CONCRETE</h4></div>
+
+
+
+ <!-- Step 0 -->
+
+
+        <div class="simsubscreen" id="canvas1"  style="padding-left: 20px; padding-right: 20px;"></br>
+
+<!-----<strong class="incanvas">STEP</strong>
+
+            <span class="circlebg">&nbsp;1&nbsp;</span>----->
+
+            <p class="incanvas" style="font-size:15px;"><strong>Objective:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">To Determine the Quality and the Dynamic Modulus of Elasticity of the Concrete Specimen using Ultrasonic Pulse Velocity method as per IS-516.</p></br>
+
+            <p class="incanvas" style="font-size:15px;"><strong>Apparatus used:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">Transmitting Transducer, Receiving Transducer, Electronic Timing Device, Standard Calibration Bar, Carborundum Stone, Grease</p></br>
+
+             <img src="image/machine.png"  style="position:absolute; visibility: ; left:22px; top:236px; height: 271px; width: 310px;"/>
+
+             <span style="position: absolute; top: 212px; left: 85px; font-size: 15px; color: blue;">Electronic Timing Device</span>
+
+            <img src="image/calibrationbar.png" style="position:absolute;visibility: ; left:406px; top:248px;height: 62px;"/>
+
+            <span style="position: absolute; top: 227px; left: 428px; font-size: 15px; color: blue;">Calibration Bar</span>
+
+            <img src="image/stone.png" style="position:absolute;visibility: ; left:406px; top:420px;height: 30px; width: 90px;"/>
+
+            <span style="position: absolute; top: 390px; left: 382px; font-size: 15px; color: blue;">Carborundum Stone</span>
+
+
+            <img src="image/grease.png" style="position:absolute;visibility:; left:605px; top:320px;height: 107px;"/>
+
+            <span style="position: absolute; top: 305px; left: 625px; font-size: 15px; color: blue;">Grease</span>
+
+            <img src="image/srs.png" style="position:absolute; left: 63px; top: 459px;
+                height: 67px; width: 148px;"/>
+
+            <span style="position: absolute; top: 408px; left: 52px; font-size: 15px; color: blue;">Transmitting<br>Transducer</span>
+
+            <span style="position: absolute; top: 508px; left: 217px; font-size: 15px; color: blue;">Receiving Transducer</span>
+
+             <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left:400px; top:400px;"><strong><br></strong></p>
+
+             <span class="blink_me" id="" style="position:absolute; font-size: 30px; left:575px; top:486px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <input type="button" id="" style="position:absolute; left:620px; top:491px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Start Experiment&nbsp;" onclick="navNext1()"/>
+
+        </div>
+<!----------------------
+            <img style="position:absolute; left:730px; top:480px; cursor:pointer;" id="nextButton1" onClick="navNext1()" src="Next.png" />
+---------------------->
+        
+
+
+        <!-- Step 1 -->
+
+
+        <div class="simsubscreen" id="canvas2" style="visibility:hidden;"></br>
+
+
+        <div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="step1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 1: a).</strong> Click on Add Button to Add Electronic Timing Device</p><br><br>
+
+            <p class="incanvas" id="step1b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: b).</strong> Click on Add Button to Apply greese and the calibration bar. </p>
+
+            <p class="incanvas" id="step1c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: c).</strong> Click on Electronic Timing Device for Zoom View</p><br><br>
+            
+            <p class="incanvas" id="step1d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: d).</strong> Click on Start Button on Electronic Timing Device to Power On it. </p>
+            
+            <p class="incanvas" id="step1e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: e).</strong> Click on Stop Button on Electronic Timing Device to Power Off it. </p>
+<span style="position: absolute; left: 10px; top: 50px;">
+            Note: Transit time displayed on the device should be same as mentioned on the calibration bar, otherwise calibrate the device.</span>
+
+            <input type="button" id="addbtn1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="addmachine1()" >
+
+            <input type="button" id="addbtn2"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addsrs1()" >
+
+            <span class="blink_me" id="barrow2" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="barrow3" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+        </div>
+
+             <!-- <div id="transwhite" style=" height: 80px; overflow-x: hidden; overflow-y: auto; ">
+
+            <p class="incanvas"  style="font-size:px; position: absolute; left: 0px; top:10px;"><strong>STEP 1:</strong></p>
+          
+            <p class="incanvas" id="step1a" style="font-size:px; position: absolute; left: 70px; top:10px;">a) Click on Add Button to Add Electronic Timing Device</p><br><br>
+
+            <p class="incanvas" id="step1b" style="font-size:px; position: absolute; left: 70px; top: 30px; visibility: hidden;">b) Click on Add Button to Add Standard Reference Specimen. </p>
+
+            <p class="incanvas" id="step1c" style="font-size:px; position: absolute; left: 70px; top:50px; visibility: hidden;">c) Click on Electronic Timing Device for Zoom View</p><br><br>
+            
+            <p class="incanvas" id="step1d" style="font-size:px; position: absolute; left: 70px; top: 70px; visibility: hidden;">d) Click on Enter Button on Electronic Timing Device to Power On it. </p>
+            
+            <p class="incanvas" id="step1e" style="font-size:px; position: absolute; left: 70px; top: 90px; visibility: hidden;">e) Click on Stop Button on Electronic Timing Device to Power Off it. </p>
+
+            
+            </div> -->
+
+                   
+
+            
+
+            <img src="image/machine.png" id="addmachine"  style="position:absolute; visibility: hidden; left:0px; top:266px; height: 345px; width: 410px;"/>
+
+            <img src="image/transbox.png" id="zoomtrans1"  style="position:absolute; visibility: hidden; left: 358px; top: 300px; height: 176px; width: 110px;" onclick="zoomview1()" />
+
+<span class="blink_me" id="zoomviewarrow1" style="position:absolute; font-size: 30px; left: 460px;
+    top: 375px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <img src="image/srs.png" id="addsrs"  style="position:absolute; visibility: hidden; left:0px; top:393px; height: 80px; width: 200px;"/>
+
+            <img src="image/machinezoomoff.png" id="zoom1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<span class="blink_me" id="zoomonarrow1" style="position:absolute; font-size: 30px; left: 590px; top: 295px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="ontrans1"  style="position:absolute; visibility: hidden; left: 590px; top: 330px; height: 35px; width: 35px;" onclick="zoom_on1()" />
+            
+            <img src="image/machinezoom.png" id="zoomon1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<img src="image/display1.png" id="macdisp1" style="position:absolute; visibility: hidden; left: 584px; top: 207px; height: 38px; width: 76px;"/>
+
+<span class="blink_me" id="zoomoffarrow1" style="position:absolute; font-size: 30px; left: 578px; top: 400px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-up"></i></strong></span>
+
+<img src="image/transbox.png" id="offtrans1"  style="position:absolute; visibility: hidden; left: 575px; top: 365px; height: 48px; width: 50px;" onclick="zoom_off1()" />
+
+            <span id="ttt" style="font-size: 20px; position: absolute; left: 380px; top: 490px; visibility: hidden; ">Transit Time = <span id="ttime" style="visibility: hidden; color: red;"> 25.4 &#181;s </span></span>
+            
+             <span class="blink_me" id="barrow4" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span id="handarrow1" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext2()"></i></span>
+    </div>
+            
+  
+        <!-- Step 2 -->
+
+
+    <div class="simsubscreen" id="canvas3" style="visibility:hidden;"></br>
+
+           <p style="font-size: 15px; position:absolute; left: 524px; top: 10px;">Select the Moisture Condition of Concrete.</p>
+
+            <select onchange="ok1()" id="item1" style="position: absolute; left: 524px;  top: 50px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px;">
+
+
+                <option value="image/transbox.png">--Select--</option>
+
+                <option value="image/indirectwallwet.png">Wet</option>
+
+                <option value="image/indirectwall.png">Dry</option>
+
+            </select>
+            <img src="image/transbox.png" id="img2"  style="position:absolute; left: 91px; top: 50px; height: 450px;"/>
+<!-- <img src="image/transbox.png" id="img2" height="100px" width="100px" style="position: absolute; left: 75px; top: 160px"> -->
+             <p style="font-size: 15px; position:absolute; left: 524px; top: 240px;">Select the type of Transducer Arrangement.</p>
+
+             <select id="item2" style="position: absolute; left: 524px;  top: 280px; width: 195px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px;">
+
+                <option value="0">--Select--</option>
+
+                <option value="500">Direct Transmission</option>
+
+                <option value="700">Semi-direct Transmission</option>
+
+                <option value="900">Indirect Transmission</option>
+
+            </select>
+
+            <!-- <img src="image/wall1.png" id="wallimg"  style="position:absolute; left: 91px; top: 35px width: 250px; height: 450px;"/> -->
+            <input type="button" id="newvalue" style="position:absolute; left:580px; top:410px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Submit&nbsp;" onclick="ok2()"/>
+        
+           
+             <span class="blink_me" id="barrow5" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>        
+
+            <span id="handarrow2" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" >
+                <i class="fa fa-hand-o-right" onclick="navNext3()"></i>
+            </span>
+
+        
+</div> 
+
+<!--direct transmission-->
+
+<!-- Step 3 -->
+
+
+        <div class="simsubscreen" id="canvas4" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype"></span>&nbsp;]</h5></div>
+            <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="step11a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 2: a).</strong> Click on Add button to add a Marker and to mark the points on the specimens.</p><br><br>
+
+            <p class="incanvas" id="step11b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 2: b).</strong> Click on Marker for Mark Point A & Point B on the Wall.</p>
+
+            <p class="incanvas" id="step11d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 2: c).</strong> Again Click on Marker for Mark Point B on the Wall.</p>
+			<p class="incanvas" id="step11c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 2: c).</strong> Measure the path length.</p>
+            <input type="button" id="addbtnds11" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; " value="&nbsp;Add&nbsp;" onclick="addmarker()" >
+
+             <span class="blink_me" id="barrow6" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            </div>
+             
+ 
+
+
+            
+
+            <span id="pointa" style="position:absolute; visibility: hidden; left:680px; top:250px;"><strong>A</strong></span>
+
+            <span id="pointb" style="position:absolute; visibility: hidden; left:680px; top:392px;"><strong>B</strong></span>
+
+           
+            <img src="image/transbox.png" id="dtw1"  style="position:absolute; left:176px; top:180px; height: 316px; visibility: hidden;"/>
+
+            <img src="image/marker.png" id="addmarker1" style="position:absolute; visibility: hidden; left: 700px;  top:180px; height: 61px; transform: rotate(-120deg);" onclick="" />
+<span class="blink_me" id="barrow7" style="position:absolute; font-size: 30px; left: 502px; top: 363px; color: ; visibility:hidden; "><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+
+<img src="image/transbox.png" id="mktrans1" style="position:absolute; visibility: hidden; left: 475px; top: 375px; height: 90px;" onclick="rotatemarkerDa()">
+
+            <img src="image/marker.png" id="addmarker2" style="position:absolute; visibility: hidden; left: 500px;  top:400px; height: 61px; transform: rotate(-120deg);" />
+
+<span class="blink_me" id="barrow8" style="position:absolute; font-size: 30px; left:502px; top:363px; color: ; visibility:hidden; "><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="mktrans2" style="position:absolute; visibility: hidden; left: 475px; top: 375px; height: 90px;" onclick="rotatemarkerDb()">
+
+            <img src="image/handmarker.png" id="handmarker1" style="position:absolute; visibility: hidden; left: 500px; top: 400px; height: 61px;" />
+
+            <img src="image/point.png" id="point1"  style="position:absolute; visibility: hidden; left:211px; top:269px;height: 20px;"/>
+
+            <img src="image/point.png" id="point2"  style="position:absolute; visibility: hidden; left:211px; top:400px;height: 20px;"/>
+
+            <img src="image/backwall.png" id="backwall1"  style="position:absolute; visibility: hidden; left:561px; top:170px; height: 316px;"/>
+
+			<img src="image/scale.png" id="scale1"  style="position:absolute; visibility: hidden; left: 560px; top: 305px; height: 16px;"/>
+			<img src="image/scale.png" id="scale2"  style="position:absolute; visibility: hidden; left: 560px; top: 445px; height: 16px;"/>
+<span id="aval1" style="position:absolute; left: 660px; top: 300px;"></span>
+<span id="aval2" style="position:absolute; left: 660px; top: 440px;"></span>
+              <img src="image/rightarrow.png" id="rightarrow1"  style="position:absolute; visibility: hidden; left:464px; top: 332px; height: 28px;"/>
+
+              <img src="image/rightarrow.png" id="leftarrowa"  style="position:absolute; visibility: hidden; left:650px; top:273px;height: 23px; transform: rotate(180deg);"/>
+
+              <img src="image/rightarrow.png" id="leftarrowb"  style="position:absolute; visibility: hidden; left:650px; top:413px; height: 23px; transform: rotate(180deg);"/>
+
+           
+
+            
+
+            
+
+            <span class="blink_me" id="barrow9" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span id="handarrow3" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext4()"></i></span>
+  
+
+
+</div>
+
+
+<!-- Step 4 -->
+
+
+        <div class="simsubscreen" id="canvas5" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype2"></span>&nbsp;]</h5></div>
+
+             <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="step5a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 3: a).</strong> Click on Add button to Add Carborundum Stone.</p><br><br>
+
+            <p class="incanvas" id="step5b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: b).</strong> Click on Carborundum Stone for Removing Plaster or other Coating from the Marked Points.</p>
+
+            <p class="incanvas" id="step5c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: c).</strong> Click on Add button to Add Grease Box.</p>
+
+            <p class="incanvas" id="step5d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: d).</strong> Click on Brush for Greasing Marked Points.</p>
+
+            <p class="incanvas" id="step5e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: e).</strong> Again click on Brush for Greasing Marked Points.</p>
+ 
+
+             <input type="button" id="addbtn21" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; " value="&nbsp;Add&nbsp;" onclick="addstone()" >
+
+            <input type="button" id="addbtn22" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addgrease()" >
+
+            </div>
+
+
+            <img src="image/transbox.png" id="wallwithpoint1"  style="position:absolute;  left:176px; top: 180px; height: 316px; visibility: hidden;"/>
+
+<img src="image/rough.png"  id="rough1"  style="position:absolute; visibility: hidden; left: 201px; top: 249px; height: 74px; width: 62px;" />            
+<img src="image/rough.png"  id="rough2"  style="position:absolute; visibility: hidden; left: 201px; top: 395px; height: 74px; width: 62px;" />
+
+            <img src="image/stone.png" id="stone1"  style="position:absolute; visibility: hidden; left:533px; top:260px;height: 30px; width: 90px;"/>
+
+            <span class="blink_me" id="barrow11" style="position:absolute; font-size: 30px; left:570px; top:212px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="sttrans1" style="position:absolute; visibility: hidden; left: 515px;
+    top: 220px; height: 74px; width: 125px;" onclick="plasremove()">
+
+              <img src="image/stonehand.png" id="stonehand1"  style="position:absolute; visibility: hidden; left:558px; top:229px;height: 90px; width: 50px;"onclick=""/>
+
+
+
+            <img src="image/grease.png" id="grease1"  style="position:absolute; visibility: hidden; left:554px; top:364px;height: 99px;"onclick=""/>
+
+		<img src="image/greaseeffect.png"  id="brgrease1"  style="position:absolute; visibility: hidden; left: 215px; top: 269px; height: 35px;" />
+
+		<img src="image/greaseeffect.png"  id="brgrease2"  style="position:absolute; visibility: hidden; left: 215px; top: 412px; height: 35px;" />
+
+        <img src="image/brushfill.png"  id="brush1"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick="usegrease1()"/>
+
+        
+
+         <!-- <img src="image/brush.png"  id="brushblank1"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick=""/> -->
+
+
+        <!-- <img src="image/brushfill.png" id="brush2"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick="usegrease2()"/> -->
+
+        
+
+        <!-- <img src="image/brush.png"  id="brushblank2"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick=""/> -->
+
+        <img src="image/backwall.png" id="backwall2"  style="position:absolute; visibility: hidden; left:561px; top:170px; height: 316px;"/>
+
+            <span class="blink_me" id="barrow10" style="position:absolute; font-size: 30px; left:637px; top:37px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+
+            <span class="blink_me" id="barrow12" style="position:absolute; font-size: 30px; left:640px; top:38px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="barrow13" style="position:absolute; font-size: 30px; left:651px; top:320px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrow14" style="position:absolute; font-size: 30px; left:651px; top:320px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrow15" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                        
+            <span id="handarrow4" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext5()"></i></span>
+         
+        
+
+
+</div>
+
+
+<!-- Step 5 -->
+
+
+        <div class="simsubscreen" id="canvas6" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype3"></span>&nbsp;]</h5></div>
+
+             <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="step6a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 4: a).</strong> Click on Electronic Timing Device to Place the Transducer on the point A marked on the Wall.</p><br><br>
+
+            <p class="incanvas" id="step6b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: b).</strong> Click on Electronic Timing Device for Zoom View.</p>
+
+            <p class="incanvas" id="step6c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: c).</strong> Click on Start Button on Electronic Timing Device to Power On it.</p>
+
+            <p class="incanvas" id="step6d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: d).</strong> Click on Stop Button on Electronic Timing Device to Power Off it.</p>
+            
+            <input type="button" id="addbtn2"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addsrs1()" >
+
+            <span class="blink_me" id="barrow2" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+            
+            </div>
+
+
+             <!-- <div id="transwhite" style="width: 700px; height: 70px; overflow-x: hidden; overflow-y: auto;" > 
+
+             <p class="incanvas"  style="font-size:px; position: absolute; left: 0px; top:10px;"><strong>STEP 3:</strong></p>
+
+             <p class="incanvas" id=""  style="font-size:px; position: absolute; left: 70px; top:10px;"> a) </p>
+
+            <p class="incanvas" id="" style="font-size:px; position: absolute; left: 70px; top:30px; visibility: hidden;">b) </p><br><br>
+            
+            <p class="incanvas" id="" style="font-size:px; position: absolute; left: 70px; top: 50px; visibility: hidden;">c)  </p>
+            
+            <p class="incanvas" id="" style="font-size:px; position: absolute; left: 70px; top: 70px; visibility: hidden;">d)  </p>-->
+             <!-- </div> -->
+           
+
+            <img src="image/backwall.png" id="backwalls3"  style="position:absolute;  left:220px; top: 173px; height: 282px; width: 81px;" onclick=""/>
+
+            <img src="image/smachine.png" id="smachine1"  style="position:absolute;  left:458px; top: 200px; height: 210px; width: 180px;" onclick="addtranspa()"/>
+
+<span class="blink_me" id="zoomviewarrow2" style="position:absolute; font-size: 30px; left: 378px;
+    top: 255px; visibility: hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+<img src="image/transbox.png" id="zoomtrans2"  style="position:absolute; visibility: hidden; left: 320px; top: 215px; height: 126px; width: 75px;" onclick="zoomview2()" />
+
+<img src="image/machinezoomoff.png" id="dtzoom1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<span class="blink_me" id="dtzoomonarrow1"style="position:absolute; font-size: 30px; left: 590px; top: 295px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="dtontrans1"  style="position:absolute; visibility: hidden; left: 590px; top: 330px; height: 35px; width: 35px;" onclick="zoom_on2()" />
+            
+            <img src="image/machinezoom.png" id="dtzoomon1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<img src="image/display1.png" id="dtmacdisp1" style="position:absolute; visibility: hidden; left: 584px; top: 207px; height: 38px; width: 76px;"/>
+
+<span class="blink_me" id="dtzoomoffarrow1"style="position:absolute; font-size: 30px; left: 578px; top: 400px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-up"></i></strong></span>
+
+<img src="image/transbox.png" id="dtofftrans1"  style="position:absolute; visibility: hidden; left: 575px; top: 365px; height: 48px; width: 50px;" onclick="zoom_off2()" />
+
+
+            <!--<span class="blink_me" id="barrow16" style="position:absolute; font-size: 37px; left:621px; top:41px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+            -->
+            
+            <span class="blink_me" id="barrow17" style="position:absolute; font-size: 30px; left: 648px; top: 345px; color: ;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrow18" style="position:absolute; font-size: 30px; left:671px; top:489px;; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrow5" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext6()"></i></span>   
+
+
+</div>
+
+
+<!-- Step 6 -->
+
+
+        <div class="simsubscreen" id="canvas7" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype4"></span>&nbsp;]</h5></div>
+        
+        <div id="transwhite" style="height: 70px;" >
+            
+            <p class="incanvas" id="step1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 5: a).</strong> Record the Path Length(L) of the Pulse= Width of the Wall.</p><br><br>
+
+            <p class="incanvas" id="step1b" style="font-size:14px; position: absolute; left: 0px; top: 25px; visibility: ; text-indent: 47px;"><strong> b).</strong> Record the Time of Pulse Transmission for Three Times.</p>
+
+        </div>
+
+           
+
+
+            <input type="button" id="" style="position:absolute; left:600px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="show1()"/>
+
+            <table border="1px" style="height: 300px; width: 550px; position: absolute; left: 115px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+            		<tr style="background-color: #000; color: #FFF;">
+                    	<td style="width: 35px;">
+                    		Point
+                    	</td>
+                    	<td style="width: 100px;">
+                    		Transmit time of the pulse(T),<br>Micro-Second
+                    	</td>
+                    	<td style="width: 60px;">
+                    		Path length(L)(mm)
+                    	</td>
+                    	<td style="width: 80px;">
+                    		Pulse velocity(V) (Km/s)=L/T
+                    	</td>
+                    </tr>
+                     
+
+                    <tr>
+                    	<td>
+                    		A
+                    	</td>
+
+                    	<td>
+                    		<span id="trpulse1" style="visibility: hidden;">107.3</span>
+                    	</td>
+
+                    	<td>
+                    		<span id="trpulse2" style="visibility: hidden;">0.302</span>
+                    	</td>
+
+                        <td>
+                    		<span id="trpulse3" style="visibility: hidden;">2.82</span>
+                    	</td>    
+                    </tr>
+
+                    <tr>
+                    	<td>
+                    		B
+                    	</td>
+                    	<td>
+                    		 - 
+                    	</td>
+                        <td>
+                    		 - 
+                    	</td>    
+                        <td>
+                    		 -  
+                    	</td>
+                    </tr>
+
+                    <tr>
+                    	<td colspan="3">
+                        	Average Time = 
+                        </td>
+                        <td>
+                        	<span id="trpulseavg" style="visibility: hidden;">2.82</span>
+                        </td>    
+                            
+                    </tr>
+ 
+
+            </table>                                         
+            
+            <span class="blink_me" id="barrow19" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrow6" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext7()"></i></span>
+
+</div>
+
+<!-- Step 7 -->
+
+
+        <div class="simsubscreen" id="canvas8" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype5"></span>&nbsp;]</h5></div>
+        <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="step8a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 6: a).</strong> Click on Electronic Timing Device to Place the Transducer on the point B marked on the Wall.</p><br><br>
+
+            <p class="incanvas" id="step8b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 6: b).</strong> Click on Electronic Timing Device for Zoom View.</p>
+
+            <p class="incanvas" id="step8c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 6: c).</strong> Click on Enter Button on Electronic Timing Device to Power On it.</p>
+
+            <p class="incanvas" id="step8d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 6: d).</strong> Click on Stop Button on Electronic Timing Device to Power Off it.</p>
+
+
+        </div>
+               
+
+             <img src="image/backwall.png" id="backwalls5"  style="position:absolute;  left:220px; top: 173px; height: 282px; width: 81px";onclick="()"/>
+
+            <img src="image/smachine.png" id="smachines5"  style="position:absolute;  left:458px; top: 200px; height: 210px; width: 180px; "onclick="addtranspb()"/> 
+
+
+
+<span class="blink_me" id="zoomviewarrow3" style="position:absolute; font-size: 30px; left: 378px;
+    top: 375px; visibility: hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+<img src="image/transbox.png" id="zoomtrans3"  style="position:absolute; visibility: hidden; left: 320px; top: 333px; height: 126px; width: 75px;" onclick="zoomview3()" />
+
+<img src="image/machinezoomoff.png" id="dt2zoom1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<span class="blink_me" id="dt2zoomonarrow1" style="position:absolute; font-size: 30px; left: 590px; top: 295px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="dt2ontrans1"  style="position:absolute; visibility: hidden; left: 590px; top: 330px; height: 35px; width: 35px;" onclick="zoom_on3()" />
+            
+            <img src="image/machinezoom.png" id="dt2zoomon1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<img src="image/display1.png" id="dt2macdisp1" style="position:absolute; visibility: hidden; left: 584px; top: 207px; height: 38px; width: 76px;"/>
+
+<span class="blink_me" id="dt2zoomoffarrow1" style="position:absolute; font-size: 30px; left: 578px; top: 400px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-up"></i></strong></span>
+
+<img src="image/transbox.png" id="dt2offtrans1"  style="position:absolute; visibility: hidden; left: 575px; top: 365px; height: 48px; width: 50px;" onclick="zoom_off3()" />
+
+                                                  
+            
+            
+            <span class="blink_me" id="barrow21" style="position:absolute; font-size: 30px; left:652px; top:306px; color: ;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrow20" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+
+                                    
+            <span id="handarrow7" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext8()"></i></span>
+
+</div>
+
+<!-- Step 8 -->
+
+
+        <div class="simsubscreen" id="canvas9" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype6"></span>&nbsp;]</h5></div>
+
+             <div id="transwhite" style="height: 70px;" >
+            
+                <p class="incanvas" id="step1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 7: a).</strong> Record the Path Length(L) of the Pulse= Width of the Wall.</p><br><br>
+
+                <p class="incanvas" id="step1b" style="font-size:14px; position: absolute; left: 0px; top: 25px; visibility: ; text-indent: 47px;"><strong> b).</strong> Record the Time of Pulse Transmission for Three Times.</p>
+
+            </div>
+ 
+
+ 		<input type="button" id="" style="position:absolute; left:550px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show Velocity&nbsp;" onclick="show2()"/>
+
+            <table border="1px" style="height: 300px; width: 550px; position: absolute; left: 115px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+            		<tr style="background-color: #000; color: #FFF;">
+                    	<td style="width: 35px;">
+                    		Point
+                    	</td>
+                    	<td style="width: 100px;">
+                    		Transmit time of the pulse(T),<br>Micro-Second
+                    	</td>
+                    	<td style="width: 60px;">
+                    		Path length(L)(mm)
+                    	</td>
+                    	<td style="width: 80px;">
+                    		Pulse velocity(V) (Km/s)=L/T
+                    	</td>
+                    </tr>
+                     
+
+                    <tr>
+                    	<td>
+                    		A
+                    	</td>
+
+                    	<td>
+                    		107.3
+                    	</td>
+
+                    	<td>
+                    		0.302
+                    	</td>
+
+                        <td>
+                    		2.82
+                    	</td>    
+                    </tr>
+
+                    <tr>
+                    	<td>
+                    		B
+                    	</td>
+                    	<td>
+                    		<span id="trpulse11" style="visibility: hidden;">106.4</span> 
+                    	</td>
+                        <td>
+                    		<span id="trpulse22" style="visibility: hidden;">0.295</span> 
+                    	</td>    
+                        <td>
+                    		<span id="trpulse33" style="visibility: hidden;">2.77</span>  
+                    	</td>
+                    </tr>
+
+                    <tr>
+                    	<td colspan="3">
+                        	Average Time = 
+                        </td>
+                        <td>
+                        	<span id="trpulseavg2" style="visibility: hidden;">2.80</span>
+                        </td>    
+                            
+                    </tr>
+ 
+
+            </table>       
+
+                                                              
+            
+            <span class="blink_me" id="barrow22" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrow8" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext9()"></i></span>
+
+</div>
+
+
+<!-- Step 9 -->
+
+
+        <div class="simsubscreen" id="canvas10" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype7"></span>&nbsp;]</h5></div>
+
+              <div id="transwhite" style=" height: 45px;">  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top: px;"><strong>Observations: Calculate the average velocity</strong></p>
+ 
+                </div>
+
+		<input type="button" id="" style="position:absolute; left: 550px; top: 140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show Velocity&nbsp;" onclick="showobs1()"/>
+
+            <table border="1px" style="height: 300px; width: 550px; position: absolute; left: 115px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr style="background-color: #000; color: #FFF;">
+                    	<td style="width: 35px;">
+                    		Point
+                    	</td>
+                    	<td style="width: 100px;">
+                    		Transmit time of the pulse(T),<br>Micro-Second
+                    	</td>
+                    	<td style="width: 60px;">
+                    		Path length(L)(mm)
+                    	</td>
+                    	<td style="width: 80px;">
+                    		Pulse velocity(V) (Km/s)=L/T
+                    	</td>
+                    </tr>
+
+                    <tr>
+                            <td><span>A</span></td>
+                            <td><span id="obs1" style="visibility: hidden;">107.3</span></td>
+                            <td><span id="obs2" style="visibility: hidden;">0.302</span></td>
+                            <td><span id="obs3" style="visibility: hidden;">2.82</span></td>
+                            
+                    </tr>
+                    <tr>
+                            <td><span>B</span></td>
+                            <td><span id="obs4" style="visibility: hidden;">106.4</span></td>
+                            <td><span id="obs5" style="visibility: hidden;">0.295</span></td>
+                            <td><span id="obs6" style="visibility: hidden;">2.77</span></td>
+                            
+                    </tr>
+                    <tr>
+                             
+                            <td colspan="3">Average Velocity</td>
+                            <td><span id="obsavg" style="visibility: hidden;">2.80</span></td>
+                            
+                    </tr>
+
+            </table>
+
+
+                    
+
+                                                              
+            
+            <span class="blink_me" id="barrow23" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrow9" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext10()"></i></span>
+
+</div>
+
+<!-- Step 10 -->
+
+
+        <div class="simsubscreen" id="canvas11" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype8"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 45px;" >  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top:0px;"><strong> Results</strong></p>
+
+               <input type="button" id="" style="position:absolute; left: 630px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showres1()"/>
+          
+            </div>
+
+
+            <table border="1px" style="height: 200px; width: 510px; position: absolute; left: 10px; top: 100px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                    Sr.No. 
+                            </td>
+
+                            <td>
+                                Average Value of Pulse Velocity(V) 
+                            </td>
+
+                            <td>
+                                Concrete Quality Grading 
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td><span>1</span></td>
+                            <td><span id="res1" style="visibility: hidden;">2.80</span></td>
+                            <td><span id="res2" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>
+                    <tr>
+                            <td><span>2</span></td>
+                            <td><span id="res3" style="visibility: hidden;">2.81</span></td>
+                            <td><span id="res4" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>
+                    <!-- <tr> 
+                            <td><span>3</span></td>
+                            <td><span id="res5" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="res6" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>-->
+                    <!-- <tr>
+                            <td><span>4</span></td>
+                            <td><span id="res7" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="res8" style="visibility: hidden;">N/A</span></td>
+
+                    </tr> -->
+                    
+
+            </table>
+
+
+            <img src="image/resformula.jpg" style="height: 45px; position: absolute; left: 530px; top: 105px;">
+            <img src="image/resformula2.jpg" style="height: 52px; position: absolute; left: 535px; top: 150px;">
+
+
+            <table border="1px" style="height: 155px; width: 720px; position: absolute; left: 10px; top: 330px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                    Sr.No. 
+                            </td>
+
+                            <td>
+                                Path length(L)(mm)
+                            </td>
+                            <td>
+                                Average transmit time of the pulse(T), Micro-Second
+                            </td>
+                            <td>
+                                Pulse velocity(V) (Km/s)=L/T
+                            </td>
+                            <td>
+                            Quality of Concrete
+                            </td>
+                            <td>
+                                Dynamic Modulus of elasticity(E) (Kg/m/s<sup>2</sup>)
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                            <td><span>1</span></td>
+                            <td><span id="res9" style="visibility: hidden;">0.302</span></td>
+                            <td><span id="res10" style="visibility: hidden;">107.3</span></td>
+                            <td><span id="res11" style="visibility: hidden;">2.82</span></td>
+                            <td><span id="res12" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="res13" style="visibility: hidden;">16192.76</span></td>
+                    </tr>
+                    <tr>
+                            <td><span>2</span></td>
+                            <td><span id="res14" style="visibility: hidden;">0.295</span></td>
+                            <td><span id="res15" style="visibility: hidden;">106.4</span></td>
+                            <td><span id="res16" style="visibility: hidden;">2.77</span></td>
+                            <td><span id="res17" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="res18" style="visibility: hidden;">15623.63</span></td>
+
+                    </tr>                    
+
+            </table>
+
+                   
+            <span id="nextresstep" style="visibility: hidden; position: absolute; left: 400px; top: 500px;"><strong>Click Next to Generate Report</strong></span>
+                                                              
+            
+            <span class="blink_me" id="barrow24" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrow10" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext11()"></i></span>
+
+</div>
+
+<!-- Step 11 -->
+
+
+        <div class="simsubscreen" id="canvas12" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>DIRECT TRANSMISSION [&nbsp;<span id="walltype9"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 45px;" >  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top:0px;"><strong> Report</strong></p> 
+          
+            </div>
+ 
+
+
+
+<input type="button" id="" style="position:absolute; left:600px; top:120px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="genrep1()"/>
+
+
+<span style="position: absolute; left: 35px; top: 105px;">Moisture Condition = <span id="moi1"></span></span>
+<span style="position: absolute; left: 35px; top: 132px;">Type of Test = Direct Transmission</span>
+
+                <table border="1px" style="height: 300px; width: 700px; position: absolute; left: 35px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                Set
+                            </td>
+
+                            <td>
+                                Pulse velocity(V) (Km/s)=L/T
+                            </td>
+
+                            <td>
+                                Quality of concrete
+                            </td>
+
+                            <td>
+                                Dynamic Modulus of elasticity(E) (Kg/m/s<sup>2</sup>)
+
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td><span>A</span></td>
+                            <td><span id="generep1" style="visibility: hidden;">2.82</span></td>
+                            <td><span id="generep2" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="generep3" style="visibility: hidden;">16192.76</span></td>
+                            
+                    </tr>
+                    <tr>
+                            <td><span>B</span></td>
+                            <td><span id="generep4" style="visibility: hidden;">2.77</span></td>
+                            <td><span id="generep5" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="generep6" style="visibility: hidden;">15623.63</span></td>
+                            
+                    </tr>
+                    
+
+            </table>             
+                                                           
+            
+            <span class="blink_me" id="barrow25" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <input type="button" id="handarrow11" style="position:absolute; left:701px; top:492px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF; visibility: hidden;" value="&nbsp;Restart&nbsp;" onclick="navNext12()"/>
+
+</div>
+
+
+<!-------------------------------------semi direct transmission------------------->
+
+<!-- Step  1 -->
+
+
+        <div class="simsubscreen" id="canvas13" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype10"></span>&nbsp;]</h5></div>
+
+
+
+            <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="stepsemi1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 3: a).</strong> Click on Add button to add Marker.</p><br><br>
+
+            <p class="incanvas" id="stepsemi1b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: b).</strong> Click on Marker for Mark Points on the Wall.</p>
+
+            <p class="incanvas" id="stepsemi1c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: c).</strong>Again Click on Marker for Mark Point B on the Wall.</p>
+
+            <input type="button" id="addbtnsemi1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: ;" value="&nbsp;Add&nbsp;" onclick="addmarkersemi()" >
+
+            <span class="blink_me" id="barrowsemi1" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+            </div>
+
+            <input type="button" id="" style="position:absolute; left:680px; top:48px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="" >
+
+            
+             <img src="image/transbox.png" id="sdt1"  style="position:absolute; left:100px; top:180px; height: 316px;"/>
+
+            <img src="image/marker.png" id="addmarkersemi1" style="position:absolute; visibility: hidden; left: 753px;  top:180px; height: 61px; transform: rotate(-120deg);" onclick="rotatemarkerSa()" />
+
+            <img src="image/marker.png" id="addmarkersemi2" style="position:absolute; visibility: hidden; left: 500px;  top:400px; height: 61px; transform: rotate(-120deg);" onclick="rotatemarkerSb()" />
+
+             <img src="image/handmarker.png" id="handsemimarker" style="position:absolute; visibility: hidden; left: 500px; top: 400px; height: 61px;" onclick="" />
+
+             <img src="image/point.png" id="pointsemi1"  style="position:absolute; visibility: hidden; left:135px; top:269px; height: 20px;"/>
+
+              <img src="image/point.png" id="pointsemi2"  style="position:absolute; visibility: hidden; left:135px; top:400px; height: 20px;"/>
+
+            <img src="image/semimarkwall.png" id="semibackwall1"  style="position:absolute; visibility: hidden; left:498px; top:180px;height: 316px;"/>
+
+            <img src="image/semimarkwallwet.png" id="semibackwall2"  style="position:absolute; visibility: hidden; left:498px; top:180px;height: 316px;"/>
+
+              <img src="image/rightarrow.png" id="rightarrowsemi1"  style="position:absolute; visibility: hidden; left:398px; top:312px;height: 28px;"/>
+
+              <img src="image/rightarrow.png" id="leftarrowsemia"  style="position:absolute; visibility: hidden; left:637px; top:264px; height: 23px;  transform: rotate(180deg);"/>
+
+              <img src="image/rightarrow.png" id="leftarrowsemib"  style="position:absolute; visibility: hidden; left:637px; top:407px;height: 23px; transform: rotate(180deg);"/>
+
+              <span id="pointsemia" style="position:absolute; visibility: hidden; left:663px; top:244px;"><strong>A</strong></span>
+
+            <span id="pointsemib" style="position:absolute; visibility: hidden; left:663px; top:387px;"><strong>B</strong></span>
+
+
+              <!--<img src="image2.png" id="pointsemix"  style="position:absolute; visibility: hidden; left:485px; top:245px;height: 20px;"/>
+
+              <img src="image/point.png" id="pointsemiy"  style="position:absolute; visibility: hidden; left:485px; top:380px;height: 20px;"/> -->
+
+
+              <span class="blink_me" id="barrowsemi2" style="position:absolute; font-size: 30px; left: 502px; top: 363px; color: ; visibility:hidden; "><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+              <span class="blink_me" id="barrowsemi3" style="position:absolute; font-size: 30px; left: 502px; top: 363px; color: ; visibility:hidden; "><strong><i class="fa fa-arrow-down"></i></strong></span>
+                                                          
+            
+            <span class="blink_me" id="barrowsemi4" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowsemi1" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext13()"></i></span>
+
+</div>
+
+<!-- Step 2 -->
+
+
+        <div class="simsubscreen" id="canvas14" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype11"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="stepsemi2a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 4: a).</strong> Click on Add button to Add Carborundum Stone.</p><br><br>
+
+            <p class="incanvas" id="stepsemi2b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: b).</strong> Click on Carborundum Stone for Removing Plaster or other Coating from the Marked Points.</p>
+
+            <p class="incanvas" id="stepsemi2c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: c).</strong> Click on Add button to Add Grease Box.</p>
+
+            <p class="incanvas" id="stepsemi2d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: d).</strong> Click on Brush for Greasing the Marked Points.</p>
+
+            <p class="incanvas" id="stepsemi2e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: e).</strong> Again click on Brush for Greasing the Marked Points.</p>
+
+            <input type="button" id="addbtnsemi2" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: ;" value="&nbsp;Add&nbsp;" onclick="addstonesemi()" >
+
+            <span class="blink_me" id="barrowsemi5" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <input type="button" id="addbtnsemi3" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addgreasesemi()" >
+
+            <span class="blink_me" id="barrowsemi7" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+
+            <!-- <input type="button" id="" style="position:absolute; left:680px; top:45px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="" > -->
+
+            <!-- <input type="button" id="" style="position:absolute; left:680px; top:105px; cursor:pointer; font-size: 15px; visibility: hidden; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="" > -->
+
+            </div>
+
+
+            
+
+                                   
+
+            <img src="image/wallwithpoint.png" id="wallwithpointsemi1"  style="position:absolute; left:200px; top: 200px; height: 316px;"/>
+
+
+<img src="image/rough.png"  id="roughsm1"  style="position:absolute; visibility: hidden; left: 224px; top: 269px; height: 74px; width: 62px;" />            
+<img src="image/rough.png"  id="roughsm2"  style="position:absolute; visibility: hidden; left: 224px; top: 410px; height: 74px; width: 62px;" />
+
+            <img src="image/stone.png" id="stonesemi1"  style="position:absolute; visibility: hidden; left:533px; top:260px;height: 30px; width: 90px;"/>
+
+            <span class="blink_me" id="barrow11" style="position:absolute; font-size: 30px; left:570px; top:212px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="sttrans2" style="position:absolute; visibility: hidden; left: 515px;
+    top: 220px; height: 74px; width: 125px;" onclick="plasremovesemi()">
+
+              <img src="image/stonehand.png" id="stonehand1"  style="position:absolute; visibility: hidden; left:558px; top:229px;height: 90px; width: 50px;"onclick=""/>
+
+<img src="image/greaseeffect.png"  id="brgreasesm1"  style="position:absolute; visibility: hidden; left: 239px; top: 289px; height: 35px;" />
+<img src="image/greaseeffect.png"  id="brgreasesm2"  style="position:absolute; visibility: hidden; left: 239px; top: 432px; height: 35px;" />
+
+<img src="image/semimarkwall.png" id="semibackwall11"  style="position:absolute; visibility: hidden; left:498px; top:180px;height: 316px;"/>
+<img src="image/semimarkwallwet.png" id="semibackwall22"  style="position:absolute; visibility: hidden; left:498px; top:180px;height: 316px;"/>
+<div id="eff" style="visibility: hidden; position: absolute; height: 250px; width: 71px; left: 526px; top: 229px;">
+<img src="image/rough.png"  id=""  style="position:absolute; visibility: ; left: -3px; top: 16px; height: 74px; width: 62px;" />            
+<img src="image/rough.png"  id=""  style="position:absolute; visibility: ; left: -3px; top: 162px; height: 74px; width: 62px;" />
+<img src="image/greaseeffect.png"  id=""  style="position:absolute; visibility: ; left: 10px; top: 40px; height: 35px;" />
+<img src="image/greaseeffect.png"  id=""  style="position:absolute; visibility: ; left: 10px; top: 181px; height: 35px;" />
+</div>      
+<!-- <img src="image/stone.png" id="stone1"  style="position:absolute; visibility: hidden; left:533px; top:260px;height: 30px; width: 90px;"onclick=""/> -->
+
+             <img src="image/stonehand.png" id="handstonesemi1"  style="position:absolute; visibility: hidden; left:559px; top:239px; height: 90px; width: 50px;"onclick=""/>
+           
+
+
+            <img src="image/grease.png" id="greasesemi1"  style="position:absolute; visibility: hidden; left:554px; top:364px;height: 99px;"onclick=""/>
+
+            <img src="image/brushfill.png"  id="brushsemi1"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick="usegreasesemi1()"/>
+
+
+        <img src="image/brushfill.png" id="brushsemi2"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick="usegreasesemi2()"/>
+
+
+            <img src="image/brush.png" id="brushblanksemi1"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick="()"/>
+
+            <img src="image/brush.png" id="brushblanksemi2"  style="position:absolute; visibility: hidden; left:577px; top:314px;height: 105px;"onclick="()"/>
+
+            <!-- <span class="blink_me" id="" style="position:absolute; font-size: 30px; left:637px; top:37px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
+
+            <span class="blink_me" id="barrowsemi6" style="position:absolute; font-size: 30px; left:568px; top:212px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+            <!-- <span class="blink_me" id="barrowsemi7" style="position:absolute; font-size: 30px; left:637px; top:97px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
+
+            <span class="blink_me" id="barrowsemi8" style="position:absolute; font-size: 30px; left:651px; top:320px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrowsemi9" style="position:absolute; font-size: 30px; left:651px; top:320px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrowsemi10" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                        
+            <span id="handarrowsemi2" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext14()"></i></span>
+         
+        
+
+
+</div>
+
+<!-- Step 3 -->
+
+
+        <div class="simsubscreen" id="canvas15" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype12"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="stepsemi3a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 4: a).</strong> Click on Electronic Timing Device to Place the Transducer on the point A marked on the Wall.</p><br><br>
+
+            <p class="incanvas" id="step15b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: b).</strong> Click on Electronic Timing Device for Zoom View.</p>
+
+            <p class="incanvas" id="step15c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: c).</strong> Click on Start Button on Electronic Timing Device to Power On it.</p>
+
+            <p class="incanvas" id="step15d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: d).</strong> Click on Stop Button on Electronic Timing Device to Power Off it.</p> 
+
+            </div>
+
+
+           
+
+            <img src="image/semimarkwall.png" id="semimarkwall2"  style="position:absolute; left:200px; top:200px; height: 316px; "/>
+
+<img src="image/rough.png" style="position:absolute; left: 224px; top: 269px; height: 74px; width: 62px;" />            
+<img src="image/rough.png" style="position:absolute; left: 224px; top: 410px; height: 74px; width: 62px;" />
+<img src="image/greaseeffect.png" style="position:absolute; left: 239px; top: 289px; height: 35px;" />
+<img src="image/greaseeffect.png" style="position:absolute; left: 239px; top: 432px; height: 35px;" />
+
+            <img src="image/sdmachine.png" id="smachinesemi1"  style="position:absolute;  left:553px; top:225px;height: 200px; width: 160px;"onclick="addtranssemipa()"/>
+
+
+            <img src="image/transbox.png" id="zoomtrans4"  style="position:absolute; visibility: hidden; left: 295px; top: 250px; height: 120px; width: 75px;" onclick="zoomview4()" />
+
+<span class="blink_me" id="smzoomviewarrow1" style="position:absolute; font-size: 30px; left: 360px; top: 290px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <!-- <img src="image/srs.png" id="addsrs"  style="position:absolute; visibility: hidden; left:0px; top:393px; height: 80px; width: 200px;"/> -->
+
+            <img src="image/machinezoomoff.png" id="smzoom1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<span class="blink_me" id="smzoomonarrow1" style="position:absolute; font-size: 30px; left: 590px; top: 295px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="smontrans1"  style="position:absolute; visibility: hidden; left: 590px; top: 330px; height: 35px; width: 35px;" onclick="zoom_on4()" />
+            
+            <img src="image/machinezoom.png" id="smzoomon1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<img src="image/display1.png" id="smmacdisp1" style="position:absolute; visibility: hidden; left: 584px; top: 207px; height: 38px; width: 76px;"/>
+
+<span class="blink_me" id="smzoomoffarrow1" style="position:absolute; font-size: 30px; left: 578px; top: 400px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-up"></i></strong></span>
+
+<img src="image/transbox.png" id="smofftrans1"  style="position:absolute; visibility: hidden; left: 575px; top: 365px; height: 48px; width: 50px;" onclick="zoom_off4()" />
+                                    
+
+            <!--<span class="blink_me" id="barrow16" style="position:absolute; font-size: 37px; left:621px; top:41px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+            -->
+            
+            <span class="blink_me" id="barrowsemi11" style="position:absolute; font-size: 30px; left:725px; top:305px; color: ;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrowsemi12" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowsemi3" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext15()"></i></span>   
+
+
+</div>
+
+<!-- Step 4 -->
+
+
+        <div class="simsubscreen" id="canvas16" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype13"></span>&nbsp;]</h5></div>
+
+              <div id="transwhite" style="height: 70px;" >
+            
+                <p class="incanvas" id="step1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 5: a).</strong> Record the Path Length(L) of the Pulse= Width of the Wall.</p><br><br>
+
+                <p class="incanvas" id="step1b" style="font-size:14px; position: absolute; left: 0px; top: 25px; visibility: ; text-indent: 47px;"><strong> b).</strong> Record the Time of Pulse Transmission for Three Times.</p>
+
+            </div>                                        
+
+
+<input type="button" id="" style="position:absolute; left:600px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showsd2()"/>
+
+            <table border="1px" style="height: 300px; width: 550px; position: absolute; left: 115px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+            		<tr style="background-color: #000; color: #FFF;">
+                    	<td style="width: 35px;">
+                    		Point
+                    	</td>
+                    	<td style="width: 100px;">
+                    		Transmit time of the pulse(T),<br>Micro-Second
+                    	</td>
+                    	<td style="width: 60px;">
+                    		Path length(L)(mm)
+                    	</td>
+                    	<td style="width: 80px;">
+                    		Pulse velocity(V) (Km/s)=L/T
+                    	</td>
+                    </tr>
+                     
+
+                    <tr>
+                    	<td>
+                    		A
+                    	</td>
+
+                    	<td>
+                    		<span id="sdpulse11" style="visibility: hidden;">107.3</span>
+                    	</td>
+
+                    	<td>
+                    		<span id="sdpulse22" style="visibility: hidden;">0.302</span>
+                    	</td>
+
+                        <td>
+                    		<span id="sdpulse33" style="visibility: hidden;">2.82</span>
+                    	</td>    
+                    </tr>
+
+                    <tr>
+                    	<td>
+                    		B
+                    	</td>
+                    	<td>
+                    		 - 
+                    	</td>
+                        <td>
+                    		 - 
+                    	</td>    
+                        <td>
+                    		 -  
+                    	</td>
+                    </tr>
+
+                    <tr>
+                    	<td colspan="3">
+                        	Average Time = 
+                        </td>
+                        <td>
+                        	<span id="sdpulseavg2" style="visibility: hidden;">2.82</span>
+                        </td>    
+                            
+                    </tr>
+ 
+
+            </table>
+
+            <span class="blink_me" id="barrowsemi13" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowsemi4" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext16()"></i></span>
+
+</div>
+
+<!-- Step 5 -->
+
+
+        <div class="simsubscreen" id="canvas17" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype14"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 45px;" >
+            
+            <p class="incanvas" id="stepsemi5a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 6: a).</strong> Click on Electronic Timing Device to Place the Transducer on the point A marked on the Wall.</p><br><br>
+
+            <p class="incanvas" id="step17b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 6: b).</strong> Click on Electronic Timing Device for Zoom View.</p>
+
+            <p class="incanvas" id="step17c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 6: c).</strong> Click on Start Button on Electronic Timing Device to Power On it.</p>            
+
+            <p class="incanvas" id="step17d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 6: d).</strong> Click on Stop Button on Electronic Timing Device to Power Off it.</p>
+
+             
+            </div>
+
+           
+
+            <img src="image/semimarkwall.png" id="semimarkwall3"  style="position:absolute; visibility: hidden; left:200px; top:200px;height: 316px; "onclick=""/>
+
+
+<img src="image/rough.png" style="position:absolute; left: 224px; top: 269px; height: 74px; width: 62px;" />            
+<img src="image/rough.png" style="position:absolute; left: 224px; top: 410px; height: 74px; width: 62px;" />
+<img src="image/greaseeffect.png" style="position:absolute; left: 239px; top: 289px; height: 35px;" />
+<img src="image/greaseeffect.png" style="position:absolute; left: 239px; top: 432px; height: 35px;" />
+
+
+            <img src="image/sdmachine.png" id="smachinesemi2"  style="position:absolute; left:553px; top:225px;height: 200px; width: 160px"onclick="addtranssemipb()"/>
+
+
+
+            <img src="image/transbox.png" id="zoomtrans5"  style="position:absolute; visibility: hidden; left: 292px; top: 388px; height: 120px; width: 75px;" onclick="zoomview5()" />
+
+<span class="blink_me" id="sm2zoomviewarrow1" style="position:absolute; font-size: 30px; left: 360px; top: 425px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <!-- <img src="image/srs.png" id="addsrs"  style="position:absolute; visibility: hidden; left:0px; top:393px; height: 80px; width: 200px;"/> -->
+
+            <img src="image/machinezoomoff.png" id="sm2zoom1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<span class="blink_me" id="sm2zoomonarrow1" style="position:absolute; font-size: 30px; left: 590px; top: 295px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="sm2ontrans1"  style="position:absolute; visibility: hidden; left: 590px; top: 330px; height: 35px; width: 35px;" onclick="zoom_on5()" />
+            
+            <img src="image/machinezoom.png" id="sm2zoomon1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<img src="image/display1.png" id="sm2macdisp1" style="position:absolute; visibility: hidden; left: 584px; top: 207px; height: 38px; width: 76px;"/>
+
+<span class="blink_me" id="sm2zoomoffarrow1" style="position:absolute; font-size: 30px; left: 578px; top: 400px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-up"></i></strong></span>
+
+<img src="image/transbox.png" id="sm2offtrans1"  style="position:absolute; visibility: hidden; left: 575px; top: 365px; height: 48px; width: 50px;" onclick="zoom_off5()" />
+                                    
+                                    
+
+            <!--<span class="blink_me" id="barrow16" style="position:absolute; font-size: 37px; left:621px; top:41px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+            -->
+            
+            <span class="blink_me" id="barrowsemi14" style="position:absolute; font-size: 30px; left:725px; top:305px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <span class="blink_me" id="barrowsemi15" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowsemi5" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext17()"></i></span>   
+
+
+</div>
+
+<!-- Step 8 -->
+
+
+        <div class="simsubscreen" id="canvas18" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype15"></span>&nbsp;]</h5></div>
+
+              <div id="transwhite" style="height: 70px;" >
+            
+                <p class="incanvas" id="step1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 7: a).</strong> Record the Path Length(L) of the Pulse= Width of the Wall.</p><br><br>
+
+                <p class="incanvas" id="step1b" style="font-size:14px; position: absolute; left: 0px; top: 25px; visibility: ; text-indent: 47px;"><strong> b).</strong> Record the Time of Pulse Transmission for Three Times.</p>
+
+            </div> 
+
+<input type="button" id="" style="position:absolute; left:600px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showsd1()"/>
+
+			<table border="1px" style="height: 300px; width: 550px; position: absolute; left: 115px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+            		<tr style="background-color: #000; color: #FFF;">
+                    	<td style="width: 35px;">
+                    		Point
+                    	</td>
+                    	<td style="width: 100px;">
+                    		Transmit time of the pulse(T),<br>Micro-Second
+                    	</td>
+                    	<td style="width: 60px;">
+                    		Path length(L)(mm)
+                    	</td>
+                    	<td style="width: 80px;">
+                    		Pulse velocity(V) (Km/s)=L/T
+                    	</td>
+                    </tr>
+                     
+
+                    <tr>
+                    	<td>
+                    		A
+                    	</td>
+
+                    	<td>
+                    		107.3
+                    	</td>
+
+                    	<td>
+                    		0.302
+                    	</td>
+
+                        <td>
+                    		2.82
+                    	</td>    
+                    </tr>
+
+                    <tr>
+                    	<td>
+                    		B
+                    	</td>
+                    	<td>
+                    		<span id="sdpulse1" style="visibility: hidden;">106.4</span> 
+                    	</td>
+                        <td>
+                    		<span id="sdpulse2" style="visibility: hidden;">0.295</span> 
+                    	</td>    
+                        <td>
+                    		<span id="sdpulse3" style="visibility: hidden;">2.77</span>  
+                    	</td>
+                    </tr>
+
+                    <tr>
+                    	<td colspan="3">
+                        	Average Time = 
+                        </td>
+                        <td>
+                        	<span id="sdpulseavg" style="visibility: hidden;">2.80</span>
+                        </td>    
+                            
+                    </tr>
+ 
+
+            </table>
+             
+            
+            <span class="blink_me" id="barrowsemi16" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowsemi6" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext18()"></i></span>
+
+</div>
+
+<!-- Step 9 -->
+
+
+        <div class="simsubscreen" id="canvas19" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype16"></span>&nbsp;]</h5></div>
+
+              <div id="transwhite" style=" height: 45px;">  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top: px;"><strong>Observations: Calculate the average velocity</strong></p>
+ 
+                </div>
+
+<input type="button" id="" style="position:absolute; left:600px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showsdobs1()"/>
+
+			<table border="1px" style="height: 300px; width: 550px; position: absolute; left: 115px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr style="background-color: #000; color: #FFF;">
+                    	<td style="width: 35px;">
+                    		Point
+                    	</td>
+                    	<td style="width: 100px;">
+                    		Transmit time of the pulse(T),<br>Micro-Second
+                    	</td>
+                    	<td style="width: 60px;">
+                    		Path length(L)(mm)
+                    	</td>
+                    	<td style="width: 80px;">
+                    		Pulse velocity(V) (Km/s)=L/T
+                    	</td>
+                    </tr>
+
+                    <tr>
+                            <td><span>A</span></td>
+                            <td><span id="sdobs1" style="visibility: hidden;">107.3</span></td>
+                            <td><span id="sdobs2" style="visibility: hidden;">0.302</span></td>
+                            <td><span id="sdobs3" style="visibility: hidden;">2.82</span></td>
+                            
+                    </tr>
+                    <tr>
+                            <td><span>B</span></td>
+                            <td><span id="sdobs4" style="visibility: hidden;">106.4</span></td>
+                            <td><span id="sdobs5" style="visibility: hidden;">0.295</span></td>
+                            <td><span id="sdobs6" style="visibility: hidden;">2.77</span></td>
+                            
+                    </tr>
+                    <tr>
+                             
+                            <td colspan="3">Average Velocity</td>
+                            <td><span id="sdobsavg" style="visibility: hidden;">2.80</span></td>
+                            
+                    </tr>
+
+            </table>
+
+            <span class="blink_me" id="barrowsemi17" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowsemi7" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext19()"></i></span>
+
+</div>
+
+<!-- Step 10 -->
+
+
+        <div class="simsubscreen" id="canvas20" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype17"></span>&nbsp;]</h5></div>
+
+              <div id="transwhite" style="height: 45px;" >  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top:0px;"><strong> Results</strong></p>
+
+               <input type="button" id="" style="position:absolute; left: 630px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showsdres1()"/>
+          
+            </div>
+
+<table border="1px" style="height: 200px; width: 510px; position: absolute; left: 10px; top: 100px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                    Sr.No. 
+                            </td>
+
+                            <td>
+                                Average Value of Pulse Velocity(V) 
+                            </td>
+
+                            <td>
+                                Concrete Quality Grading 
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td><span>1</span></td>
+                            <td><span id="sdres1" style="visibility: hidden;">2.80</span></td>
+                            <td><span id="sdres2" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>
+                    <tr>
+                            <td><span>2</span></td>
+                            <td><span id="sdres3" style="visibility: hidden;">2.81</span></td>
+                            <td><span id="sdres4" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>
+                    <!-- <tr> 
+                            <td><span>3</span></td>
+                            <td><span id="sdres5" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="sdres6" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>-->
+                    <!-- <tr>
+                            <td><span>4</span></td>
+                            <td><span id="sdres7" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="sdres8" style="visibility: hidden;">N/A</span></td>
+
+                    </tr> -->
+                    
+
+            </table>
+
+
+            <img src="image/resformula.jpg" style="height: 45px; position: absolute; left: 530px; top: 105px;">
+            <img src="image/resformula2.jpg" style="height: 52px; position: absolute; left: 535px; top: 150px;">
+
+
+            <table border="1px" style="height: 155px; width: 720px; position: absolute; left: 10px; top: 330px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                    Sr.No. 
+                            </td>
+
+                            <td>
+                                Path length(L)(mm)
+                            </td>
+                            <td>
+                                Average transmit time of the pulse(T), Micro-Second
+                            </td>
+                            <td>
+                                Pulse velocity(V) (Km/s)=L/T
+                            </td>
+                            <td>
+                            Quality of Concrete
+                            </td>
+                            <td>
+                                Dynamic Modulus of elasticity(E) (Kg/m/s<sup>2</sup>)
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                            <td><span>1</span></td>
+                            <td><span id="sdres9" style="visibility: hidden;">0.302</span></td>
+                            <td><span id="sdres10" style="visibility: hidden;">107.3</span></td>
+                            <td><span id="sdres11" style="visibility: hidden;">2.82</span></td>
+                            <td><span id="sdres12" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="sdres13" style="visibility: hidden;">16192.76</span></td>
+                    </tr>
+                    <tr>
+                            <td><span>2</span></td>
+                            <td><span id="sdres14" style="visibility: hidden;">0.295</span></td>
+                            <td><span id="sdres15" style="visibility: hidden;">106.4</span></td>
+                            <td><span id="sdres16" style="visibility: hidden;">2.77</span></td>
+                            <td><span id="sdres17" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="sdres18" style="visibility: hidden;">15623.63</span></td>
+
+                    </tr>                    
+
+            </table> 
+
+            <span id="nextressdstep" style="visibility: hidden; position: absolute; left: 400px; top: 500px;"><strong>Click Next to Generate Report</strong></span>
+                                                              
+ 
+                                                              
+            
+            <span class="blink_me" id="barrowsemi18" style="position:absolute; font-size: 30px; left:680px; top:490px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowsemi8" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext20()"></i></span>
+
+</div>
+
+<!-- Step 11 -->
+
+
+        <div class="simsubscreen" id="canvas21" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>SEMI-DIRECT TRANSMISSION [&nbsp;<span id="walltype18"></span>&nbsp;]</h5></div>
+
+               <div id="transwhite" style="height: 45px;" >  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top:0px;"><strong> Report</strong></p> 
+          
+            </div>
+
+
+<input type="button" id="" style="position:absolute; left:600px; top:120px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="gensdrep1()"/>
+
+
+<span style="position: absolute; left: 35px; top: 105px;">Moisture Condition = <span id="moi2"></span></span>
+<span style="position: absolute; left: 35px; top: 132px;">Type of Test = Semi-Direct Transmission</span>
+
+			<table border="1px" style="height: 300px; width: 700px; position: absolute; left: 35px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                Set
+                            </td>
+
+                            <td>
+                                Pulse velocity(V) (Km/s)=L/T
+                            </td>
+
+                            <td>
+                                Quality of concrete
+                            </td>
+
+                            <td>
+                                Dynamic Modulus of elasticity(E) (Kg/m/s<sup>2</sup>)
+
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td><span>A</span></td>
+                            <td><span id="sdgenerep1" style="visibility: hidden;">2.82</span></td>
+                            <td><span id="sdgenerep2" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="sdgenerep3" style="visibility: hidden;">16192.76</span></td>
+                            
+                    </tr>
+                    <tr>
+                            <td><span>B</span></td>
+                            <td><span id="sdgenerep4" style="visibility: hidden;">2.77</span></td>
+                            <td><span id="sdgenerep5" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="sdgenerep6" style="visibility: hidden;">15623.63</span></td>
+                            
+                    </tr>
+                    
+
+            </table>
+
+                
+                                                             
+            
+           <!-- < span class="blink_me" id="" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick=""></i></span>
+ -->
+
+            <span class="blink_me" id="barrowsemi19" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <input type="button" id="handarrowsemi9" style="position:absolute; left:701px; top:492px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF; visibility: hidden;" value="&nbsp;Restart&nbsp;" onclick="navNext21()"/>
+
+</div>
+
+
+
+
+
+<!--indirect transmission-->
+
+<!-- Step 1 -->
+
+
+        <div class="simsubscreen" id="canvas22" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype19"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="stepindirect1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 3: a).</strong> Click on Add button to add Marker.</p><br><br>
+
+            <p class="incanvas" id="stepindirect1b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: b).</strong> Click on Marker for Mark Points on the Wall.</p>
+
+            <input type="button" id="addbtnin1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: ;" value="&nbsp;Add&nbsp;" onclick="addmarkerin()" >
+
+            <!-- <input type="button" id="addbtn2"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addsrs1()" >
+
+            <span class="blink_me" id="barrow2" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="barrow3" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
+
+        </div>
+
+               
+
+            <!-- <input type="button" id="" style="position:absolute; left:680px; top:45px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="" > -->
+
+            
+
+            <img src="image/indirectwall.png" id="indt"  style="position:absolute; left: 85px; top:200px; height: 320px; width: 300px;"/>
+
+             <img src="image/marker.png" id="addmarkerind1" style="position:absolute; visibility: hidden; left: 700px;  top:180px; height: 61px; transform: rotate(-120deg);" onclick="" />
+
+             <img src="image/marker.png" id="addmarkerind2" style="position:absolute; visibility: hidden; left: 500px;  top:400px; height: 61px; transform: rotate(-120deg);" onclick="" />
+
+              <img src="image/marker.png" id="addmarkerind3" style="position:absolute; visibility: hidden; left: 500px;  top:400px; height: 61px; transform: rotate(-120deg);" onclick="" />
+
+              <img src="image/marker.png" id="addmarkerind4" style="position:absolute; visibility: hidden; left: 500px;  top:400px; height: 61px; transform: rotate(-120deg);" onclick="" />
+
+              <img src="image/marker.png" id="addmarkerind5" style="position:absolute; visibility: hidden; left: 500px;  top:400px; height: 61px; transform: rotate(-120deg);" onclick="" />
+
+              <span class="blink_me" id="barrowin2" style="position:absolute; font-size: 30px; left:510px; top: 355px; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+              <span class="blink_me" id="barrowin2b" style="position:absolute; font-size: 30px; left:510px; top: 355px; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+              <span class="blink_me" id="barrowin2c" style="position:absolute; font-size: 30px; left:510px; top: 355px; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+              <span class="blink_me" id="barrowin2d" style="position:absolute; font-size: 30px; left:510px; top: 355px; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+              <span class="blink_me" id="barrowin2e" style="position:absolute; font-size: 30px; left:510px; top: 355px; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+            <img src="image/transbox.png" id="mktsemi1" style="position:absolute; visibility: hidden; left: 475px; top: 375px; height: 90px;" onclick="rotatehandmarkerIna()">
+
+            <img src="image/transbox.png" id="mktsemi2" style="position:absolute; visibility: hidden; left: 475px; top: 375px; height: 90px;" onclick="rotatehandmarkerIna2()">
+
+            <img src="image/transbox.png" id="mktsemi3" style="position:absolute; visibility: hidden; left: 475px; top: 375px; height: 90px;" onclick="rotatehandmarkerIna3()">
+
+            <img src="image/transbox.png" id="mktsemi4" style="position:absolute; visibility: hidden; left: 475px; top: 375px; height: 90px;" onclick="rotatehandmarkerIna4()">
+
+            <img src="image/transbox.png" id="mktsemi5" style="position:absolute; visibility: hidden; left: 475px; top: 375px; height: 90px;" onclick="rotatehandmarkerIna5()">
+
+              <img src="image/handmarker.png" id="handindmarker" style="position:absolute; visibility: hidden; left: 500px; top: 400px; height: 61px;" onclick="" />
+           
+
+            <img src="image/point.png" id="pointina"  style="position:absolute; visibility: hidden; left:120px; top:242px;height: 20px;"/>
+
+            <img src="image/point.png" id="pointinb"  style="position:absolute; visibility: hidden; left:173px; top:242px;height: 20px;" />
+
+            <img src="image/point.png" id="pointinc"  style="position:absolute; visibility: hidden; left:227px; top:242px;height: 20px;"/>
+
+            <img src="image/point.png" id="pointind"  style="position:absolute; visibility: hidden; left:281px; top:242px;height: 20px;"/>
+
+            <img src="image/point.png" id="pointine"  style="position:absolute; visibility: hidden; left:338px; top:242px;height: 20px;"/>
+
+            <img src="image/rightarrow.png" id="rightarrowin1"  style="position:absolute; visibility: hidden; left:398px; top:315px;height: 29px;" />
+
+            <img src="image/indirectwall.png" id="indirectwall2"  style="position:absolute; visibility: hidden; left:483px; top:200px;height: 258px;"/>
+
+            <img src="image/redcircle.png" id="redcirclea"  style="position:absolute; visibility: hidden; left:496px; top:242px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcircleb"  style="position:absolute; visibility: hidden; left:549px; top:242px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcirclec"  style="position:absolute; visibility: hidden; left:604px; top:242px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcircled"  style="position:absolute; visibility: hidden; left:658px; top:242px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcirclee"  style="position:absolute; visibility: hidden; left:713px; top:242px;height: 40px;"/>
+
+            <span id="pointinA" style="position:absolute; visibility: hidden; left:509px; top:252px;"><strong>A</strong></span>
+
+            <span id="pointinB" style="position:absolute; visibility: hidden; left:562px; top:252px;"><strong>B</strong></span>
+
+            <span id="pointinC" style="position:absolute; visibility: hidden; left:617px; top:252px;"><strong>C</strong></span>
+
+            <span id="pointinD" style="position:absolute; visibility: hidden; left:671px; top:252px;"><strong>D</strong></span>
+
+            <span id="pointinE" style="position:absolute; visibility: hidden; left:727px; top:252px;"><strong>E</strong></span>
+
+            <span class="blink_me" id="barrowin1" style="position:absolute; font-size: 30px; left:637px; top:37px; "><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            
+
+           
+            <span class="blink_me" id="barrowin5" style="position:absolute; font-size: 30px; left:510px;
+            top: 355px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+            <span class="blink_me" id="barrowin6" style="position:absolute; font-size: 30px; left:510px;
+            top: 355px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+
+                                                           
+            
+            <span class="blink_me" id="barrowin7" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowin1" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext22()"></i></span>
+
+</div>
+
+<!-- Step 2 -->
+
+
+        <div class="simsubscreen" id="canvas23" style="visibility: hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype20"></span>&nbsp;]</h5></div>
+			
+		<div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="stepindirect2a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 3: a).</strong> Click on Add button to Add Carborundum Stone.</p><br><br>
+
+            <p class="incanvas" id="stepindirect2b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: b).</strong> Click on Carborundum Stone for Removing Plaster or other Coating from the Marked Points.</p>
+
+            <p class="incanvas" id="stepindirect2c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: c).</strong> Click on Add button to Add Grease Box.</p>
+
+            <p class="incanvas" id="stepindirect2d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: d).</strong> Click on Brush for Greasing the Marked Points.</p>
+
+            <input type="button" id="addbtnin2" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: ;" value="&nbsp;Add&nbsp;" onclick="addstonein()" >
+
+            <input type="button" id="addbtnin3" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addgreasein()" >
+
+            <span class="blink_me" id="barrowin8" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="barrowin10" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+        </div>
+ 
+
+            <img src="image/indirectwall.png" id="indirectwall3"  style="position:absolute;  left: 85px; top:200px; height: 320px; width: 300px;"/>
+
+            <img src="image/point.png" id="pointinaa"  style="position:absolute;  left:120px; top:242px;height: 20px;"/>
+
+            <img src="image/point.png" id="pointinbb"  style="position:absolute;  left:173px; top:242px;height: 20px;" />
+
+            <img src="image/point.png" id="pointincc"  style="position:absolute;  left:227px; top:242px;height: 20px;"/>
+
+            <img src="image/point.png" id="pointindd"  style="position:absolute;  left:281px; top:242px;height: 20px;"/>
+
+            <img src="image/point.png" id="pointinee"  style="position:absolute;  left:338px; top:242px;height: 20px;"/>
+
+<img src="image/rough.png"  id="rough5"  style="position:absolute; visibility: hidden;left: 100px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" /> 
+
+<img src="image/rough.png"  id="rough6"  style="position:absolute; visibility: hidden;left: 155px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/rough.png"  id="rough7"  style="position:absolute; visibility: hidden;left: 209px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/rough.png"  id="rough8"  style="position:absolute; visibility: hidden;left: 261px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/rough.png"  id="rough9"  style="position:absolute; visibility: hidden;left: 315px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/greaseeffect.png"  id="brgreasein1"  style="position:absolute; visibility: hidden; left: 113px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png"  id="brgreasein2"  style="position:absolute; visibility: hidden; left: 166px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png"  id="brgreasein3"  style="position:absolute; visibility: hidden; left: 220px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png"  id="brgreasein4"  style="position:absolute; visibility: hidden; left: 274px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png"  id="brgreasein5"  style="position:absolute; visibility: hidden; left: 330px; top: 235px; height: 35px;" />
+
+            <img src="image/stone.png" id="stonein1"  style="position:absolute; visibility: hidden; left:600px; top:235px; height: 30px; width: 90px;" onclick="" />
+
+<span class="blink_me" id="barrowin9" style="position:absolute; font-size: 30px; left:565px; top:194px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="sttrans3" style="position:absolute; visibility: hidden; left: 515px;
+    top: 220px; height: 74px; width: 125px;" onclick="plasremovein()">
+
+            <img src="image/stonehand.png" id="handstonein1"  style="position:absolute; visibility: hidden; left:600px; top:235px; height: 90px; width: 50px;" onclick="" />
+
+            <img src="image/grease.png" id="greasein1"  style="position:absolute; visibility: hidden; left:557px; top:370px; height: 90px;" onclick="" />
+
+            <img src="image/brushfill.png" id="brushin1"  style="position:absolute; visibility: hidden; left:581px; top:314px; height: 107px;" onclick="addgreasein1()" />
+
+            <img src="image/brush.png" id="brushblankin1"  style="position:absolute; visibility: hidden; left:348px; top:163px; height: 107px;" onclick="" />
+ 
+
+            <span class="blink_me" id="barrowin11" style="position:absolute; font-size: 30px; left:660px; top:330px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>                                                                                              
+            
+            <span class="blink_me" id="barrowin12" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+                                    
+            <span id="handarrowin2" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext23()"></i></span>
+
+</div>
+
+
+
+<!-- Step 3 -->
+
+
+        <div class="simsubscreen" id="canvas24" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype21"></span>&nbsp;]</h5></div>
+
+		<div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="step24a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 4: a).</strong> Click on Eletronic Timing Device to Place Transducer on Point A and Place Receiver at Point B.</p><br><br>
+
+            <p class="incanvas" id="step24b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: b).</strong> Click on Electronic Timing Device for Zoom View.</p>
+
+            <p class="incanvas" id="step24c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: c).</strong> Click on Start Button on Electronic Timing Device to Power On it.</p>
+
+            <p class="incanvas" id="step24d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: d).</strong> Click on Stop Button on Electronic Timing Device to Power Off it.</p>
+
+            <!-- <input type="button" id="addbtnin2" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: ;" value="&nbsp;Add&nbsp;" onclick="addstonein()" > -->
+
+            <!-- <input type="button" id="addbtnin3" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addgreasein()" > -->
+
+            <!-- <span class="blink_me" id="barrowin8" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
+
+            <!-- <span class="blink_me" id="barrowin10" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
+
+        </div>
+
+              <!-- <div id="transwhite" style="width: 700px; height: 80px; overflow-x: hidden; overflow-y: auto;" > 
+
+
+              <p class="incanvas"  style="font-size:px; position: absolute; left: 0px; top:10px;"><strong>STEP 3:</strong></p>
+
+               <p class="incanvas" id="stepindirect3a" style="font-size:px; position: absolute; left: 70px; top:10px;">a) </p> 
+
+            <p class="incanvas" id="step24b" style="font-size:px; position: absolute; left: 70px; top:30px; visibility: hidden;">b) </p><br><br>
+            
+            <p class="incanvas" id="step24c" style="font-size:px; position: absolute; left: 70px; top: 50px; visibility: hidden;">c)  </p>
+            
+            <p class="incanvas" id="step24d" style="font-size:px; position: absolute; left: 70px; top: 70px; visibility: hidden;">d)  </p>-->
+
+             <!-- </div> -->
+            
+
+            <img src="image/indirectwall.png" id="indirectwall4"  style="position:absolute;  left:85px; top:200px; height: 320px; width: 300px;"/>
+
+           
+            <img src="image/redcircle.png" id="redcircles3a"  style="position:absolute; left:109px; top:233px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcircles3b"  style="position:absolute; left:162px; top:233px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcircles3c"  style="position:absolute; left:216px; top:233px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcircles3d"  style="position:absolute; left:270px; top:233px;height: 40px;"/>
+
+            <img src="image/redcircle.png" id="redcircles3e"  style="position:absolute; left:326px; top:233px;height: 40px;"/>
+
+<img src="image/rough.png" style="position:absolute; left: 100px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" /> 
+
+<img src="image/rough.png" style="position:absolute; left: 155px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/rough.png" style="position:absolute; left: 209px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/rough.png" style="position:absolute; left: 261px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/rough.png" style="position:absolute; left: 315px; top: 215px; height: 74px; width: 62px; transform: rotate(90deg);" />
+
+<img src="image/greaseeffect.png" style="position:absolute; left: 113px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png" style="position:absolute; left: 166px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png" style="position:absolute; left: 220px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png" style="position:absolute; left: 274px; top: 235px; height: 35px;" />
+
+<img src="image/greaseeffect.png" style="position:absolute; left: 330px; top: 235px; height: 35px;" />
+
+             <img src="image/obj4.png" id="smachinein1"  style="position:absolute;  left: 390px; top:260px ;height: 220px; width: 352px;" onclick="placetransreceiver()"/> 
+
+<span class="blink_me" id="inzoomviewarrow1" style="position:absolute; font-size: 30px; left: 460px;
+    top: 275px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-left"></i></strong></span>
+
+            <img src="image/transbox.png" id="inzoomtrans1"  style="position:absolute; visibility: hidden; left: 388px; top: 208px; height: 160px; width: 95px;" onclick="zoomview6()" />
+
+
+
+            <img src="image/srs.png" id="inaddsrs"  style="position:absolute; visibility: hidden; left:0px; top:393px; height: 80px; width: 200px;"/>
+
+            <img src="image/machinezoomoff.png" id="inzoom1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<span class="blink_me" id="inzoomonarrow1" style="position:absolute; font-size: 30px; left: 590px; top: 295px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<img src="image/transbox.png" id="inontrans1"  style="position:absolute; visibility: hidden; left: 590px; top: 330px; height: 35px; width: 35px;" onclick="zoom_on6()" />
+            
+            <img src="image/machinezoom.png" id="inzoomon1"  style="position:absolute; visibility: hidden; left: 535px; top: 130px; height: 350px;"/>
+
+<img src="image/display1.png" id="inmacdisp1" style="position:absolute; visibility: hidden; left: 584px; top: 207px; height: 38px; width: 76px;"/>
+
+<span class="blink_me" id="inzoomoffarrow1" style="position:absolute; font-size: 30px; left: 578px; top: 400px; color: yellow; visibility: hidden;"><strong><i class="fa fa-arrow-up"></i></strong></span>
+
+<img src="image/transbox.png" id="inofftrans1"  style="position:absolute; visibility: hidden; left: 575px; top: 365px; height: 48px; width: 50px;" onclick="zoom_off6()" />
+
+
+           <span class="blink_me" id="barrowin13" style="position:absolute; font-size: 30px; left:750px; top:330px; color: ; visibility: ;"><strong><i class="fa fa-arrow-left"></i></strong></span>                                                                                              
+            
+            <span class="blink_me" id="barrowin14" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+                                    
+            <span id="handarrowin3" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext24()"></i></span>
+
+</div>
+
+
+<!-- Step 4 -->
+
+
+        <div class="simsubscreen" id="canvas25" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype22"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 70px;" >
+            
+                <p class="incanvas" id="step1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 5: a).</strong> Record the Time(T) of Pulse Transmission for Different Distance Between the Transducer</p><br><br>
+
+                <p class="incanvas" id="step1b" style="font-size:14px; position: absolute; left: 0px; top: 25px; visibility: ; text-indent: 67px;">(Place the Transmitter at a Place the Receiver at C, then D and E).</p>
+
+            </div>
+
+              <!-- <div id="transwhite" style="height: 80px;" >   
+
+
+              <p class="incanvas"  style="font-size:px; position: absolute; left: 0px; top:10px;"><strong>STEP 5:</strong></p>
+
+               <p class="incanvas" id="stepindirect4a" style="font-size:px; position: absolute; left: 70px; top:10px;">a) </p> -->
+
+                <!-- </div> -->
+
+<input type="button" id="" style="position:absolute; left:600px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showid1()"/>
+
+            <table border="1px" style="height: 300px; width: 390px; position: absolute; left: 50px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 200px;" >
+                                    Transmit time of the pulse(T),<br>Micro-Second
+                            </td>
+
+                            <td style="width: 135px;">
+                                    Distance between Transducers(mm)                                   
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                            <td>
+                                    <span id="idpulse1" style="visibility: hidden;">N/A</span>
+                            </td>
+
+                            <td>
+                                    <span id="idpulse2" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                            <td>
+                                    <span id="idpulse3" style="visibility: hidden;">N/A</span>
+                            </td>
+                            <td>
+                                    <span id="idpulse4" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                        
+                    </tr>
+
+                    <tr>
+                            <td>
+                                    <span id="idpulse5" style="visibility: hidden;">N/A</span>
+                            </td>
+                            <td>
+                                    <span id="idpulse6" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                             <td>
+                                    <span id="idpulse7" style="visibility: hidden;">N/A</span>
+                            </td>
+                            <td>
+                                    <span id="idpulse8" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                    </tr>
+
+            </table>       
+<img src="image/formula3.jpg" style="position: absolute; left: 470px; top: 195px; height: 120px;">
+        
+                                                    
+            
+            <span class="blink_me" id="barrowin15" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowin4" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext25()"></i></span>
+
+</div>
+
+
+
+<!-- Step 5 -->
+
+
+        <div class="simsubscreen" id="canvas26" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype23"></span>&nbsp;]</h5></div>
+
+              <div id="transwhite" style=" height: 45px;">  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top: px;"><strong>Observations</strong></p>
+ 
+                </div>
+
+<input type="button" id="" style="position:absolute; left:600px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showidobs1()"/>
+
+            <table border="1px" style="height: 300px; width: 390px; position: absolute; left: 50px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 200px;" >
+                                    Transmit time of the pulse(T),<br>Micro-Second
+                            </td>
+
+                            <td style="width: 135px;">
+                                    Distance between Transducers(mm)                                   
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                            <td>
+                                    <span id="idobs1" style="visibility: hidden;">N/A</span>
+                            </td>
+
+                            <td>
+                                    <span id="idobs2" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                            <td>
+                                    <span id="idobs3" style="visibility: hidden;">N/A</span>
+                            </td>
+                            <td>
+                                    <span id="idobs4" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                        
+                    </tr>
+
+                    <tr>
+                            <td>
+                                    <span id="idobs5" style="visibility: hidden;">N/A</span>
+                            </td>
+                            <td>
+                                    <span id="idobs6" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                             <td>
+                                    <span id="idobs7" style="visibility: hidden;">N/A</span>
+                            </td>
+                            <td>
+                                    <span id="idobs8" style="visibility: hidden;">N/A</span>
+                            </td>
+                            
+                    </tr>
+
+            </table>
+                                         
+                                                                
+            
+            <span class="blink_me" id="barrowin16" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowin5" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext26()"></i></span>
+
+</div>
+
+<!-- Step 6 -->
+
+
+        <div class="simsubscreen" id="canvas27" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype24"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 70px;" >
+            
+                <p class="incanvas" id="step1a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 6: a).</strong> Plot the Graph (Best Fit Line) Between Pulse Transmit Time and the Distance </p><br><br>
+
+                <p class="incanvas" id="step1b" style="font-size:14px; position: absolute; left: 0px; top: 25px; visibility: ; text-indent: 67px;">Between the Transducers.</p>
+
+            </div>
+
+
+              <!-- <div id="transwhite" style="width: 700px; height: 80px;" >   -->
+
+
+              <!-- <p class="incanvas"  style="font-size:px; position: absolute; left: 0px; top:10px;"><strong>STEP 6:</strong></p>
+
+               <p class="incanvas" id="stepindirect6a" style="font-size:px; position: absolute; left: 70px; top:10px;">a) </p> -->         
+
+       
+                <!-- </div> -->
+
+<input type="button" id="" style="position:absolute; left:600px; top:140px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showidslope1()"/>
+
+              <span style="position:absolute; font-size: 20px; left:24px; top:452px;"> <strong>Slope = </strong><span id="idslope" style="visibility: hidden;">N/A</span></span>                                                 
+            
+            <span class="blink_me" id="barrowin17" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowin6" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext27()"></i></span>
+</div>
+
+<!-- Step 7 -->
+
+
+        <div class="simsubscreen" id="canvas28" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype25"></span>&nbsp;]</h5></div>
+
+            <div id="transwhite" style="height: 45px;" >  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top:0px;"><strong> Results</strong></p>
+
+               <input type="button" id="" style="position:absolute; left: 630px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="showidres1()"/>
+          
+            </div>
+
+<table border="1px" style="height: 200px; width: 510px; position: absolute; left: 10px; top: 100px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                    Sr.No. 
+                            </td>
+
+                            <td>
+                                Average Value of Pulse Velocity(V) 
+                            </td>
+
+                            <td>
+                                Concrete Quality Grading 
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td><span>1</span></td>
+                            <td><span id="idres1" style="visibility: hidden;">2.80</span></td>
+                            <td><span id="idres2" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>
+                    <tr>
+                            <td><span>2</span></td>
+                            <td><span id="idres3" style="visibility: hidden;">2.81</span></td>
+                            <td><span id="idres4" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>
+                    <!-- <tr> 
+                            <td><span>3</span></td>
+                            <td><span id="res5" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="res6" style="visibility: hidden;">N/A</span></td>
+
+                    </tr>-->
+                    <!-- <tr>
+                            <td><span>4</span></td>
+                            <td><span id="res7" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="res8" style="visibility: hidden;">N/A</span></td>
+
+                    </tr> -->
+                    
+
+            </table>
+
+
+            <img src="image/resformula.jpg" style="height: 45px; position: absolute; left: 530px; top: 105px;">
+            <img src="image/resformula2.jpg" style="height: 52px; position: absolute; left: 535px; top: 150px;">
+
+
+            <table border="1px" style="height: 155px; width: 720px; position: absolute; left: 10px; top: 330px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                    Sr.No. 
+                            </td>
+
+                            <td>
+                                Path length(L)(mm)
+                            </td>
+                            <td>
+                                Average transmit time of the pulse(T), Micro-Second
+                            </td>
+                            <td>
+                                Pulse velocity(V) (Km/s)=L/T
+                            </td>
+                            <td>
+                            Quality of Concrete
+                            </td>
+                            <td>
+                                Dynamic Modulus of elasticity(E) (Kg/m/s<sup>2</sup>)
+                            </td>
+                            
+                    </tr>
+
+                    <tr>
+                            <td><span>1</span></td>
+                            <td><span id="idres9" style="visibility: hidden;">0.302</span></td>
+                            <td><span id="idres10" style="visibility: hidden;">107.3</span></td>
+                            <td><span id="idres11" style="visibility: hidden;">2.82</span></td>
+                            <td><span id="idres12" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="idres13" style="visibility: hidden;">16192.76</span></td>
+                    </tr>
+                    <tr>
+                            <td><span>2</span></td>
+                            <td><span id="idres14" style="visibility: hidden;">0.295</span></td>
+                            <td><span id="idres15" style="visibility: hidden;">106.4</span></td>
+                            <td><span id="idres16" style="visibility: hidden;">2.77</span></td>
+                            <td><span id="idres17" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="idres18" style="visibility: hidden;">15623.63</span></td>
+
+                    </tr>                    
+
+            </table> 
+
+            <span id="nextresidstep" style="visibility: hidden; position: absolute; left: 400px; top: 500px;"><strong>Click Next to Generate Report</strong></span>
+
+            <span class="blink_me" id="barrowin18" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="handarrowin7" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick="navNext28()"></i></span>
+
+</div>
+
+<!-- Step 8 -->
+
+
+        <div class="simsubscreen" id="canvas29" style="visibility:hidden;"></br>
+
+             <div id="title1"><h5>IN-DIRECT TRANSMISSION [&nbsp;<span id="walltype26"></span>&nbsp;]</h5></div>
+
+               <div id="transwhite" style="height: 45px;" >  
+
+               <p class="incanvas"  style="font-size:14px; position: absolute; left: 0px; top:0px;"><strong> Report</strong></p> 
+          
+            </div>
+
+
+<input type="button" id="" style="position:absolute; left:600px; top:120px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Show&nbsp;" onclick="genidrep1()"/>
+
+
+<span style="position: absolute; left: 35px; top: 105px;">Moisture Condition = <span id="moi3"></span></span>
+<span style="position: absolute; left: 35px; top: 132px;">Type of Test = In-Direct Transmission</span>
+                
+                <table border="1px" style="height: 300px; width: 700px; position: absolute; left: 35px; top: 185px; text-align: center; background-color: #FFF; color: #000;">
+
+                    <tr >
+                            <td style="width: 50px;">
+                                Set
+                            </td>
+
+                            <td>
+                                Pulse velocity(V) (Km/s)=L/T
+                            </td>
+
+                            <td>
+                                Quality of concrete
+                            </td>
+
+                            <td>
+                                Dynamic Modulus of elasticity(E) (Kg/m/s<sup>2</sup>)
+
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td><span>A</span></td>
+                            <td><span id="ingenerep1" style="visibility: hidden;">2.82</span></td>
+                            <td><span id="ingenerep2" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="ingenerep3" style="visibility: hidden;">16192.76</span></td>
+                            
+                    </tr>
+                    <tr>
+                            <td><span>B</span></td>
+                            <td><span id="ingenerep4" style="visibility: hidden;">2.77</span></td>
+                            <td><span id="ingenerep5" style="visibility: hidden;">N/A</span></td>
+                            <td><span id="ingenerep6" style="visibility: hidden;">15623.63</span></td>
+                            
+                    </tr>
+                    
+
+            </table> 
+                <!-- <table border="1px" style="height: 300px; width: 700px; position: absolute; left: 35px; top: 185px; text-align: center; background-color: #FFF; color: #000;"> -->
+
+                     
+                            
+                             
+                    
+
+            <!-- </table> -->
+            <!-- <span class="blink_me" id="" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+                                    
+            <span id="" style="position:absolute; left:719px; top:485px; height: 50px; width: 50px; visibility: hidden; font-size: 35px;" ><i class="fa fa-hand-o-right" onclick=""></i></span> -->
+
+            <span class="blink_me" id="barrowin19" style="position:absolute; font-size: 30px; left:671px; top:489px; color: ; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <input type="button" id="handarrowin8" style="position:absolute; left:701px; top:492px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF; visibility: hidden;" value="&nbsp;Restart&nbsp;" onclick="navNext21()"/>
+
+</div>
+
+
+ </div><!--- First Div---->
+
+
+</td></tr>
+</table>
+
+<script src="../assets/js/iframeResize.js"></script></body>
+</html>
