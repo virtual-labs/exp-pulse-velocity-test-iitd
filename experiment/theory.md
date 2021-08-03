@@ -35,14 +35,15 @@ UPV testing ideally requires two-sided access to the structural element in quest
 <img src="images/pic3.png" height="250px"><img src="images/pic4.png" height="250px"><img src="images/pic5.png" height="250px"><br><br>
 
 There are various factors which influence pulse velocity measurements, such as: <br><br>
-<ul>a) Materials and mix proportions of concrete Density and modulus of elasticity of aggregate also significantly affect the pulse velocity.</ul>
-<ul>b) Surface condition and moisture content of concrete</ul>
-<ul>c) Path length, shape, and size of concrete member</ul>
-<ul>d) Temperature of concrete</ul>
-<ul>e) Stress to which the structure is subjected</ul>
-<ul>f) Reinforcing bars</ul>
-<ul>g) Contact between the transducer and concrete</ul>
-<ul>h) Cracks and voids</ul>
+<ul>a) Materials and mix proportions of concrete </ul>
+<ul>b) Density and modulus of elasticity of aggregate</ul>
+<ul>c) Surface condition and moisture content of concrete</ul>
+<ul>d) Path length, shape, and size of concrete member</ul>
+<ul>e) Temperature of concrete</ul>
+<ul>f) Stress to which the structure is subjected</ul>
+<ul>g) Reinforcing bars</ul>
+<ul>h) Contact between the transducer and concrete</ul>
+<ul>i) Cracks and voids</ul>
 
 Generally, a coupling agent, such as oil, petroleum jelly, soluble jelly, moldable rubber, or grease,should be applied to the transducers, or the test surface, or both. The function of the coupling agent is to eliminate air between the contact surfaces of the transducers and the concrete.
 
