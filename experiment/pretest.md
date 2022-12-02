@@ -11,7 +11,7 @@ A    Nondestructive, ex-situ test<br>
 C    Destructive, ex-situ test<br>
 D    Destructive, in-situ test<br><br>
 
-Q3. Question- Higher velocities in ultrasonic pulse velocity test indicate<br>
+Q3. Higher velocities in ultrasonic pulse velocity test indicate<br>
 **A    Good quality and uniformity of concrete**<br>
 B    Good quality and discontinuity in the concrete<br>
 C    Concrete has many internal cracks<br>
