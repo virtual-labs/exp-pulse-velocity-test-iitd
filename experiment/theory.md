@@ -49,40 +49,57 @@ Generally, a coupling agent, such as oil, petroleum jelly, soluble jelly, moldab
 The quality of concrete in terms of uniformity, incidence or absence of internal flaws, cracks and segregation, etc., (indicative of the level of workmanship employed) can thus be assessed using the guidelines given in the following table.<br><br>
 
 <!-- <img src="webimages/pic6.png" style="height: 150px; "><br><br> -->
-
-   
-<table border="1" style="width: 600px">
-    <tr style="background-color: #000; color: #FFF; text-align : center;">
-        <td colspan="3" style="padding: 10px">Velocity Criterion for Concrete Quality Grading</td>
-        
-
-    </tr>
-    <tr>
-        <td style="padding: 10px">Sr.No.</td>
-        <td>Average Value of Pulse Velocity by Cross Probing, km/s  </td>
-        <td>Concrete Quality Grading</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px">1</td>
-        <td style="padding: 10px">> 4.40</td>
-        <td style="padding: 10px">Excellent</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px">2</td>
-        <td style="padding: 10px">3.75 to 4.40</td>
-        <td style="padding: 10px">Good</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px">3</td>
-        <td style="padding: 10px">3.00 to 3.75</td>
-        <td style="padding: 10px">Doubtful</td>
-    </tr>
-
-    <tr>
-        <td style="padding: 10px">4</td>
-        <td style="padding: 10px">< 3.00</td>
-        <td style="padding: 10px">Poor</td>
-    </tr>
+<table>
+<thead>
+  <tr>
+    <th colspan="3">Velocity Criteria for Concrete Quality Grading</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">Sr. No.</td>
+    <td rowspan="2">Average value of Pulse Velocity<br>by Cross Probing km/s</td>
+    <td rowspan="2">Concrete Quality <br>Grading</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td colspan="3">( i ) For Concrete ( &#8804; M25 )</td>
+  </tr>
+  <tr>
+    <td>(a)</td>
+    <td>Below 3.5</td>
+    <td>Doubtful*</td>
+  </tr>
+  <tr>
+    <td>(b)</td>
+    <td>3.5 - 4.5</td>
+    <td>Good</td>
+  </tr>
+  <tr>
+    <td>(c)</td>
+    <td>Above 4.5</td>
+    <td>Excellent</td>
+  </tr>
+  <tr>
+    <td colspan="3">( ii ) For Concrete ( &gt; M25 )</td>
+  </tr>
+  <tr>
+    <td>(a)</td>
+    <td>Below 3.75</td>
+    <td>Doubtful*</td>
+  </tr>
+  <tr>
+    <td>(b)</td>
+    <td>3.75 - 4.5</td>
+    <td>Good</td>
+  </tr>
+  <tr>
+    <td>(c)</td>
+    <td>Above 4.5</td>
+    <td>Excellent</td>
+  </tr>
+</tbody>
 </table><br><br>
 
 *In case of ‘Doubtful’ quality, it may be necessary to carry out further tests.
