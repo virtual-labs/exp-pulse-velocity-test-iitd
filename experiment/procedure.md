@@ -42,4 +42,6 @@ Concrete Quality Grading:<br><br>
 
 <br><br> 
 <strong>Precautions:</strong><br><br>
-The quality of the coupling is critically important to the accuracy and maximum range of the method. Inadequate coupling will result in unstable and inaccurate time measurements, and will significantly shorten the effective range of the instrument. Repeat measurements should be made at the same location to minimize erroneous readings due to poor coupling.<br><br>
+1. The quality of the coupling is critically important to the accuracy and maximum range of the method. Inadequate coupling will result in unstable and inaccurate time measurements, and will significantly shorten the effective range of the instrument. Repeat measurements should be made at the same location to minimize erroneous readings due to poor coupling.<br><br>
+
+2. As per the clause 2.4.3.2.5 of IS 516 part 5 section 1 for indirect test surface probing in general gives lower pulse velocity than in case of cross probing and depending on number of parameters, the difference could be of the  order  of  about  0.5  km/s.  In  view  of  this,  it  is recommended  that,  in  surface  probing  method  for indirect test the pulse  velocity  may  be  increased  by  0.5  km/s,  for values > 3.0 km/s. We will use the corrected value of velocity to assess the quality of concrete
