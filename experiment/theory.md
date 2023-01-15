@@ -55,7 +55,7 @@ The quality of concrete in terms of uniformity, incidence or absence of internal
 
 
 <div align="middle">
-<table>
+  <table>
 <thead>
   <tr>
     <th colspan="3">Velocity Criteria for Concrete Quality Grading</th>
