@@ -1,0 +1,108 @@
+
+/home/runner/work/exp-pulse-velocity-test-iitd/exp-pulse-velocity-test-iitd/experiment/simulation/main.js
+     4:10  warning  'navNext1' is defined but never used             no-unused-vars
+    16:10  warning  'navNext2' is defined but never used             no-unused-vars
+    35:10  warning  'navNext3' is defined but never used             no-unused-vars
+   162:10  warning  'navNext4' is defined but never used             no-unused-vars
+   199:10  warning  'navNext5' is defined but never used             no-unused-vars
+   217:10  warning  'navNext6' is defined but never used             no-unused-vars
+   236:10  warning  'navNext7' is defined but never used             no-unused-vars
+   257:10  warning  'navNext8' is defined but never used             no-unused-vars
+   275:10  warning  'navNext9' is defined but never used             no-unused-vars
+   293:10  warning  'navNext10' is defined but never used            no-unused-vars
+   311:10  warning  'navNext11' is defined but never used            no-unused-vars
+   332:10  warning  'navNext12' is defined but never used            no-unused-vars
+   343:10  warning  'navNext13' is defined but never used            no-unused-vars
+   373:10  warning  'navNext14' is defined but never used            no-unused-vars
+   400:10  warning  'navNext15' is defined but never used            no-unused-vars
+   418:10  warning  'navNext16' is defined but never used            no-unused-vars
+   449:10  warning  'navNext17' is defined but never used            no-unused-vars
+   466:10  warning  'navNext18' is defined but never used            no-unused-vars
+   483:10  warning  'navNext19' is defined but never used            no-unused-vars
+   500:10  warning  'navNext20' is defined but never used            no-unused-vars
+   521:10  warning  'navNext21' is defined but never used            no-unused-vars
+   530:10  warning  'navNext22' is defined but never used            no-unused-vars
+   560:10  warning  'navNext23' is defined but never used            no-unused-vars
+   590:11  warning  'navNext24' is defined but never used            no-unused-vars
+   608:11  warning  'navNext25' is defined but never used            no-unused-vars
+   625:10  warning  'navNext26' is defined but never used            no-unused-vars
+   643:10  warning  'navNext27' is defined but never used            no-unused-vars
+   661:10  warning  'navNext28' is defined but never used            no-unused-vars
+   685:10  warning  'ok1' is defined but never used                  no-unused-vars
+   698:10  warning  'ok2' is defined but never used                  no-unused-vars
+   761:10  warning  'show1' is defined but never used                no-unused-vars
+   774:10  warning  'showsd1' is defined but never used              no-unused-vars
+   788:10  warning  'showid1' is defined but never used              no-unused-vars
+   805:10  warning  'show2' is defined but never used                no-unused-vars
+   819:10  warning  'showsd2' is defined but never used              no-unused-vars
+   833:10  warning  'showobs1' is defined but never used             no-unused-vars
+   847:10  warning  'showsdobs1' is defined but never used           no-unused-vars
+   862:10  warning  'showidobs1' is defined but never used           no-unused-vars
+   878:10  warning  'showidslope1' is defined but never used         no-unused-vars
+   890:10  warning  'showres1' is defined but never used             no-unused-vars
+   918:10  warning  'showsdres1' is defined but never used           no-unused-vars
+   947:10  warning  'showidres1' is defined but never used           no-unused-vars
+   985:10  warning  'genrep1' is defined but never used              no-unused-vars
+   990:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+   995:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+   996:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1001:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1018:10  warning  'gensdrep1' is defined but never used            no-unused-vars
+  1023:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1028:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1029:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1034:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1051:10  warning  'genidrep1' is defined but never used            no-unused-vars
+  1056:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1061:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1062:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1067:4   warning  Mixed spaces and tabs                            no-mixed-spaces-and-tabs
+  1087:10  warning  'addmachine1' is defined but never used          no-unused-vars
+  1105:10  warning  'addsrs1' is defined but never used              no-unused-vars
+  1124:10  warning  'zoomview1' is defined but never used            no-unused-vars
+  1146:10  warning  'zoom_on1' is defined but never used             no-unused-vars
+  1172:10  warning  'zoom_off1' is defined but never used            no-unused-vars
+  1189:10  warning  'zoomview2' is defined but never used            no-unused-vars
+  1211:10  warning  'zoom_on2' is defined but never used             no-unused-vars
+  1236:10  warning  'zoom_off2' is defined but never used            no-unused-vars
+  1253:10  warning  'zoomview3' is defined but never used            no-unused-vars
+  1275:10  warning  'zoom_on3' is defined but never used             no-unused-vars
+  1300:10  warning  'zoom_off3' is defined but never used            no-unused-vars
+  1317:10  warning  'zoomview4' is defined but never used            no-unused-vars
+  1341:10  warning  'zoom_on4' is defined but never used             no-unused-vars
+  1367:10  warning  'zoom_off4' is defined but never used            no-unused-vars
+  1386:10  warning  'zoomview5' is defined but never used            no-unused-vars
+  1410:10  warning  'zoom_on5' is defined but never used             no-unused-vars
+  1436:10  warning  'zoom_off5' is defined but never used            no-unused-vars
+  1453:10  warning  'zoomview6' is defined but never used            no-unused-vars
+  1473:10  warning  'zoom_on6' is defined but never used             no-unused-vars
+  1499:10  warning  'zoom_off6' is defined but never used            no-unused-vars
+  1519:10  warning  'addmarker' is defined but never used            no-unused-vars
+  1539:14  warning  'rotatemarkerDa' is defined but never used       no-unused-vars
+  1654:10  warning  'addstone' is defined but never used             no-unused-vars
+  1675:10  warning  'plasremove' is defined but never used           no-unused-vars
+  1707:10  warning  'addgrease' is defined but never used            no-unused-vars
+  1720:10  warning  'usegrease1' is defined but never used           no-unused-vars
+  1744:10  warning  'usegrease2' is defined but never used           no-unused-vars
+  1787:10  warning  'addtranspa' is defined but never used           no-unused-vars
+  1803:10  warning  'addtranspb' is defined but never used           no-unused-vars
+  1822:10  warning  'addmarkersemi' is defined but never used        no-unused-vars
+  1839:11  warning  'rotatemarkerSa' is defined but never used       no-unused-vars
+  1897:11  warning  'rotatemarkerSb' is defined but never used       no-unused-vars
+  1957:10  warning  'addstonesemi' is defined but never used         no-unused-vars
+  1977:10  warning  'plasremovesemi' is defined but never used       no-unused-vars
+  2007:10  warning  'addgreasesemi' is defined but never used        no-unused-vars
+  2020:10  warning  'usegreasesemi1' is defined but never used       no-unused-vars
+  2062:10  warning  'usegreasesemi2' is defined but never used       no-unused-vars
+  2107:10  warning  'addtranssemipa' is defined but never used       no-unused-vars
+  2124:10  warning  'addtranssemipb' is defined but never used       no-unused-vars
+  2142:10  warning  'addmarkerin' is defined but never used          no-unused-vars
+  2161:10  warning  'rotatehandmarkerIna' is defined but never used  no-unused-vars
+  2407:10  warning  'addstonein' is defined but never used           no-unused-vars
+  2427:10  warning  'plasremovein' is defined but never used         no-unused-vars
+  2471:10  warning  'addgreasein' is defined but never used          no-unused-vars
+  2484:10  warning  'addgreasein1' is defined but never used         no-unused-vars
+  2527:10  warning  'placetransreceiver' is defined but never used   no-unused-vars
+
+✖ 103 problems (0 errors, 103 warnings)
+
